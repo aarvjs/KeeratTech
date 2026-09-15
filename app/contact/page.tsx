@@ -78,9 +78,8 @@ export default function ContactPage() {
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-[#666666] uppercase">Phone & Toll Free</h4>
-              <p className="text-xs font-semibold text-[#111111] mt-1">{COMPANY_INFO.tollFree}</p>
-              <p className="text-[11px] text-[#666666]">{COMPANY_INFO.phone}</p>
+              <h4 className="text-xs font-bold text-[#666666] uppercase">Phone & Contact</h4>
+              <a href="tel:+917235055577" className="text-xs font-semibold text-[#111111] mt-1 block hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a>
             </div>
           </div>
 
@@ -235,7 +234,7 @@ export default function ContactPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <span className="text-xs font-bold text-[#0B8F4D] uppercase">Headquarters Location</span>
-                  <h3 className="text-base font-bold text-[#111111]">Bengaluru Industrial Corridor</h3>
+                  <h3 className="text-base font-bold text-[#111111]">Panki B Block, Kanpur</h3>
                 </div>
                 <Building2 className="w-5 h-5 text-[#0B8F4D]" />
               </div>
@@ -244,7 +243,7 @@ export default function ContactPage() {
               <div className="relative w-full h-60 rounded-xl overflow-hidden border border-[#E5E7EB] bg-[#F8FAF8]">
                 <iframe
                   title="Keerat Electech Headquarters Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5831969641775!2d77.6369062!3d12.9344403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144ed8980301%3A0x68bf06087b28ec96!2sKoramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14285.342129528738!2d80.2285!3d26.4712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c470a1a3617e9%3A0x8dd0b10ec689b252!2sPanki%2C%20Kanpur%2C%20Uttar%20Pradesh%20208020!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -255,7 +254,7 @@ export default function ContactPage() {
               </div>
 
               <div className="text-xs text-[#666666] space-y-1">
-                <p>📍 Sector 5, Tech Corridor, Bengaluru, KA 560100</p>
+                <p>📍 {COMPANY_INFO.address}</p>
                 <p>⚡ Express Logistics Hub for Pan-India & Export Orders</p>
               </div>
             </div>
@@ -269,11 +268,11 @@ export default function ContactPage() {
               <div className="space-y-2 text-xs text-[#666666]">
                 <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
                   <strong className="text-[#111111] block">Mumbai Testing Center & Logistics</strong>
-                  <span>MIDC Industrial Area, Navi Mumbai • +91 22 4920-8811</span>
+                  <span>MIDC Industrial Area, Navi Mumbai • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
                 </div>
                 <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
                   <strong className="text-[#111111] block">Delhi NCR Regional Hub</strong>
-                  <span>Ecotech III, Greater Noida, UP • +91 120 4920-8822</span>
+                  <span>Ecotech III, Greater Noida, UP • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
                 </div>
               </div>
             </div>

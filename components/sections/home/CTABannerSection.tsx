@@ -35,12 +35,12 @@ export const CTABannerSection: React.FC = () => {
             </Button>
 
             <Button
-              href={`tel:${COMPANY_INFO.tollFree}`}
+              href="tel:+917235055577"
               variant="secondary"
               size="lg"
               icon={<PhoneCall className="w-5 h-5 text-[#0B8F4D]" />}
             >
-              Call Toll Free: {COMPANY_INFO.tollFree}
+              Call: {COMPANY_INFO.phone}
             </Button>
           </div>
         </div>

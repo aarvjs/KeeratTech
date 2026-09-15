@@ -100,10 +100,10 @@ export const Navbar: React.FC = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1.5">
+            <a href="tel:+917235055577" className="flex items-center gap-1.5 hover:text-[#0B8F4D] transition-colors">
               <Phone className="w-3.5 h-3.5 text-[#0B8F4D]" />
-              Toll Free: <strong className={isTransparent ? 'text-white' : 'text-[#111111]'}>{COMPANY_INFO.tollFree}</strong>
-            </span>
+              Call: <strong className={isTransparent ? 'text-white' : 'text-[#111111]'}>{COMPANY_INFO.phone}</strong>
+            </a>
             <span>|</span>
             <span>ISO 9001:2015 & ETA Option 1 Certified Manufacturer</span>
           </div>

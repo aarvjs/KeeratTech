@@ -20,16 +20,16 @@ export const COMPANY_INFO = {
   productsCount: '500+',
   citiesPresent: '25+',
   clientsCount: '3,000+',
-  phone: '+91 (080) 4920-8800',
-  tollFree: '1800-425-9988',
+  phone: '+91 72350 55577',
+  tollFree: '+91 72350 55577',
   email: 'info@keeratelectech.com',
   inquiryEmail: 'sales@keeratelectech.com',
-  address: 'Keerat Electech Industrial Park, Sector 5, Tech Corridor, Bengaluru, KA 560100',
+  address: 'T1, Shree Prabhu Vatika, Near Shri Ram Education Center, Panki B Block, 208020',
   workingHours: 'Mon - Sat: 8:30 AM - 6:30 PM (IST)',
   socialLinks: {
     facebook: 'https://facebook.com',
     instagram: 'https://instagram.com',
-    whatsapp: 'https://wa.me/919876543210',
+    whatsapp: 'https://wa.me/917235055577',
   },
 };
 
@@ -498,8 +498,8 @@ export const FAQS: FAQItem[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 'team-1',
-    name: 'Dr. Arvinth Raj',
-    role: 'Founder & Managing Director',
+    name: 'Shobhit Shukla',
+    role: 'Owner & Managing Director',
     image: '/assets/images/engineer_worker.png',
     experience: '35+ Years in Fastening Tech',
     bio: 'Ph.D. in Structural Engineering. Pioneer in mechanical anchor design and heavy industrial joint integrity.',

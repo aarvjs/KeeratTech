@@ -79,7 +79,7 @@ export const CertificateMockupCard: React.FC<CertificateMockupProps> = ({
           {/* Signature */}
           <div className="text-right">
             <div className="font-serif italic text-xs text-[#111111] font-bold">
-              Dr. Arvinth Raj
+              Shobhit Shukla
             </div>
             <span className="text-[9px] text-[#666666] block font-medium">Director of Quality</span>
             <span className="text-[9px] font-mono text-[#666666]">{date}</span>

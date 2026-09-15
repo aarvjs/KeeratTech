@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#0B8F4D] shrink-0" />
-                <span className="text-[#111111] font-semibold">{COMPANY_INFO.phone}</span>
+                <a href="tel:+917235055577" className="text-[#111111] font-semibold hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#0B8F4D] shrink-0" />
@@ -167,7 +167,7 @@ export const Footer: React.FC = () => {
               <div className="absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: `url('/assets/images/skyscraper.png')` }} />
               <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent flex items-center justify-center p-2 text-center">
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.google.com/?q=T1,+Shree+Prabhu+Vatika,+Near+Shri+Ram+Education+Center,+Panki+B+Block,+208020"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#0B8F4D] hover:bg-[#086938] text-white text-[11px] font-bold px-3 py-1.5 rounded-md flex items-center gap-1.5 shadow-xs transition-colors"
