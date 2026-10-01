@@ -21,7 +21,7 @@ export const ServicesSection: React.FC = () => {
           {SERVICES.map((service) => (
             <div
               key={service.id}
-              className="group bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#0B8F4D] p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              className="group bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#E3261E] p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Image */}
@@ -38,7 +38,7 @@ export const ServicesSection: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#0B8F4D] transition-colors duration-200">
+                <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E3261E] transition-colors duration-200">
                   {service.title}
                 </h3>
 
@@ -50,7 +50,7 @@ export const ServicesSection: React.FC = () => {
                 <div className="mt-4 space-y-2 pt-4 border-t border-[#E5E7EB]">
                   {service.features.slice(0, 2).map((feat, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-xs text-[#111111] font-medium">
-                      <CheckCircle className="w-3.5 h-3.5 text-[#0B8F4D] shrink-0" />
+                      <CheckCircle className="w-3.5 h-3.5 text-[#E3261E] shrink-0" />
                       <span>{feat}</span>
                     </div>
                   ))}
@@ -60,7 +60,7 @@ export const ServicesSection: React.FC = () => {
               <div className="mt-6 pt-4 border-t border-[#E5E7EB]">
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#0B8F4D] hover:underline gap-1.5 transition-all"
+                  className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#E3261E] hover:underline gap-1.5 transition-all"
                 >
                   Explore Service Details <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </Link>

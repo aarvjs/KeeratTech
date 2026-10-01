@@ -24,9 +24,9 @@ export const BrandsMarqueeSection: React.FC = () => {
           {brandsList.map((brand, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-2.5 px-5 py-2.5 bg-[#F8FAF8] rounded-lg border border-[#E5E7EB] hover:border-[#0B8F4D] transition-colors shrink-0 group"
+              className="flex items-center gap-2.5 px-5 py-2.5 bg-[#F8FAF8] rounded-lg border border-[#E5E7EB] hover:border-[#E3261E] transition-colors shrink-0 group"
             >
-              <div className="w-2 h-2 rounded-full bg-[#0B8F4D]" />
+              <div className="w-2 h-2 rounded-full bg-[#E3261E]" />
               <div>
                 <span className="text-base font-extrabold text-[#111111] tracking-wider font-mono">
                   {brand.logoText}

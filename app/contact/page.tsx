@@ -64,7 +64,7 @@ export default function ContactPage() {
         {/* Contact Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
           <div className="bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-xs flex items-start gap-3.5">
-            <div className="p-2.5 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl shrink-0">
+            <div className="p-2.5 bg-[#E3261E]/10 text-[#E3261E] rounded-xl shrink-0">
               <MapPin className="w-5 h-5" />
             </div>
             <div>
@@ -74,28 +74,28 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-xs flex items-start gap-3.5">
-            <div className="p-2.5 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl shrink-0">
+            <div className="p-2.5 bg-[#E3261E]/10 text-[#E3261E] rounded-xl shrink-0">
               <Phone className="w-5 h-5" />
             </div>
             <div>
               <h4 className="text-xs font-bold text-[#666666] uppercase">Phone & Contact</h4>
-              <a href="tel:+917235055577" className="text-xs font-semibold text-[#111111] mt-1 block hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a>
+              <a href="tel:+917235055577" className="text-xs font-semibold text-[#111111] mt-1 block hover:text-[#E3261E] transition-colors">{COMPANY_INFO.phone}</a>
             </div>
           </div>
 
           <div className="bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-xs flex items-start gap-3.5">
-            <div className="p-2.5 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl shrink-0">
+            <div className="p-2.5 bg-[#E3261E]/10 text-[#E3261E] rounded-xl shrink-0">
               <Mail className="w-5 h-5" />
             </div>
             <div>
               <h4 className="text-xs font-bold text-[#666666] uppercase">Corporate Email</h4>
-              <p className="text-xs font-semibold text-[#0B8F4D] mt-1">{COMPANY_INFO.email}</p>
+              <p className="text-xs font-semibold text-[#E3261E] mt-1">{COMPANY_INFO.email}</p>
               <p className="text-[11px] text-[#666666]">{COMPANY_INFO.inquiryEmail}</p>
             </div>
           </div>
 
           <div className="bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-xs flex items-start gap-3.5">
-            <div className="p-2.5 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl shrink-0">
+            <div className="p-2.5 bg-[#E3261E]/10 text-[#E3261E] rounded-xl shrink-0">
               <Clock className="w-5 h-5" />
             </div>
             <div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
           {/* Inquiry Form */}
           <div className="lg:col-span-7 bg-white rounded-2xl p-8 sm:p-10 border border-[#E5E7EB] shadow-xs">
             <div className="mb-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0B8F4D]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#E3261E]">
                 Technical Inquiry & Commercial Quotes
               </span>
               <h2 className="text-2xl font-extrabold text-[#111111] mt-1">
@@ -125,7 +125,7 @@ export default function ContactPage() {
 
             {submitted ? (
               <div className="py-10 text-center space-y-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB] p-6">
-                <div className="w-14 h-14 bg-[#0B8F4D] text-white rounded-full flex items-center justify-center mx-auto shadow-sm">
+                <div className="w-14 h-14 bg-[#E3261E] text-white rounded-full flex items-center justify-center mx-auto shadow-sm">
                   <CheckCircle className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-extrabold text-[#111111]">Inquiry Received Successfully</h3>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                       placeholder="e.g. Vikramaditya Sharma"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8]"
+                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8]"
                     />
                   </div>
 
@@ -156,7 +156,7 @@ export default function ContactPage() {
                       placeholder="e.g. L&T Construction"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8]"
+                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8]"
                     />
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                       placeholder="vikram@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8]"
+                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8]"
                     />
                   </div>
 
@@ -182,7 +182,7 @@ export default function ContactPage() {
                       placeholder="+91 98765 43210"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8]"
+                      className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8]"
                     />
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   <select
                     value={formData.productInterest}
                     onChange={(e) => setFormData({ ...formData, productInterest: e.target.value })}
-                    className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8] font-medium"
+                    className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8] font-medium"
                   >
                     {PRODUCT_CATEGORIES.map((cat) => (
                       <option key={cat.id} value={cat.name}>
@@ -212,12 +212,12 @@ export default function ContactPage() {
                     placeholder="Specify anchor sizes, load specs, estimated quantities, or jobsite location..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none bg-[#F8FAF8]"
+                    className="w-full px-4 py-2.5 text-xs sm:text-sm border border-[#E5E7EB] rounded-xl focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none bg-[#F8FAF8]"
                   ></textarea>
                 </div>
 
                 <div className="p-3 bg-[#F8FAF8] rounded-xl flex items-center gap-2 text-xs text-[#666666] border border-[#E5E7EB]">
-                  <ShieldCheck className="w-4 h-4 text-[#0B8F4D] shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-[#E3261E] shrink-0" />
                   <span>Clean API integration point ready for CRM backend connection.</span>
                 </div>
 
@@ -233,10 +233,10 @@ export default function ContactPage() {
             <div className="bg-white text-[#111111] rounded-2xl p-6 border border-[#E5E7EB] shadow-xs space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="text-xs font-bold text-[#0B8F4D] uppercase">Headquarters Location</span>
+                  <span className="text-xs font-bold text-[#E3261E] uppercase">Headquarters Location</span>
                   <h3 className="text-base font-bold text-[#111111]">Panki B Block, Kanpur</h3>
                 </div>
-                <Building2 className="w-5 h-5 text-[#0B8F4D]" />
+                <Building2 className="w-5 h-5 text-[#E3261E]" />
               </div>
 
               {/* Map iFrame */}
@@ -262,17 +262,17 @@ export default function ContactPage() {
             {/* Regional Hubs */}
             <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-xs space-y-3">
               <h4 className="text-xs font-bold text-[#111111] uppercase tracking-wider flex items-center gap-2">
-                <Headphones className="w-4 h-4 text-[#0B8F4D]" /> Regional Distribution Depots
+                <Headphones className="w-4 h-4 text-[#E3261E]" /> Regional Distribution Depots
               </h4>
 
               <div className="space-y-2 text-xs text-[#666666]">
                 <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
                   <strong className="text-[#111111] block">Mumbai Testing Center & Logistics</strong>
-                  <span>MIDC Industrial Area, Navi Mumbai • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
+                  <span>MIDC Industrial Area, Navi Mumbai • <a href="tel:+917235055577" className="hover:text-[#E3261E] transition-colors">{COMPANY_INFO.phone}</a></span>
                 </div>
                 <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
                   <strong className="text-[#111111] block">Delhi NCR Regional Hub</strong>
-                  <span>Ecotech III, Greater Noida, UP • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
+                  <span>Ecotech III, Greater Noida, UP • <a href="tel:+917235055577" className="hover:text-[#E3261E] transition-colors">{COMPANY_INFO.phone}</a></span>
                 </div>
               </div>
             </div>

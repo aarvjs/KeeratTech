@@ -33,7 +33,7 @@ export const FooterVideoSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-extrabold uppercase tracking-wider"
         >
-          <ShieldCheck className="w-4 h-4 text-[#0B8F4D]" />
+          <ShieldCheck className="w-4 h-4 text-[#E3261E]" />
           Keerat Electech Site Engineering
         </motion.div>
 
@@ -45,7 +45,7 @@ export const FooterVideoSection: React.FC = () => {
           className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight"
         >
           Built for Megastructures. <br />
-          <span className="text-[#0B8F4D]">Certified for Safety.</span>
+          <span className="text-[#E3261E]">Certified for Safety.</span>
         </motion.h2>
 
         <motion.p

@@ -76,13 +76,13 @@ export const Navbar: React.FC = () => {
 
   const getCategoryIcon = (iconName: string) => {
     switch (iconName) {
-      case 'ShieldAlert': return <ShieldAlert className="w-4 h-4 text-[#0B8F4D]" />;
-      case 'FlaskConical': return <FlaskConical className="w-4 h-4 text-[#0B8F4D]" />;
-      case 'Wrench': return <Wrench className="w-4 h-4 text-[#0B8F4D]" />;
-      case 'Disc': return <Disc className="w-4 h-4 text-[#0B8F4D]" />;
-      case 'Droplet': return <Droplet className="w-4 h-4 text-[#0B8F4D]" />;
-      case 'Grid': return <Grid className="w-4 h-4 text-[#0B8F4D]" />;
-      default: return <Nut className="w-4 h-4 text-[#0B8F4D]" />;
+      case 'ShieldAlert': return <ShieldAlert className="w-4 h-4 text-[#E3261E]" />;
+      case 'FlaskConical': return <FlaskConical className="w-4 h-4 text-[#E3261E]" />;
+      case 'Wrench': return <Wrench className="w-4 h-4 text-[#E3261E]" />;
+      case 'Disc': return <Disc className="w-4 h-4 text-[#E3261E]" />;
+      case 'Droplet': return <Droplet className="w-4 h-4 text-[#E3261E]" />;
+      case 'Grid': return <Grid className="w-4 h-4 text-[#E3261E]" />;
+      default: return <Nut className="w-4 h-4 text-[#E3261E]" />;
     }
   };
 
@@ -100,8 +100,8 @@ export const Navbar: React.FC = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:+917235055577" className="flex items-center gap-1.5 hover:text-[#0B8F4D] transition-colors">
-              <Phone className="w-3.5 h-3.5 text-[#0B8F4D]" />
+            <a href="tel:+917235055577" className="flex items-center gap-1.5 hover:text-[#E3261E] transition-colors">
+              <Phone className="w-3.5 h-3.5 text-[#E3261E]" />
               Call: <strong className={isTransparent ? 'text-white' : 'text-[#111111]'}>{COMPANY_INFO.phone}</strong>
             </a>
             <span>|</span>
@@ -109,8 +109,8 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4 font-medium">
-            <span className="text-[#0B8F4D] font-bold">25+ Cities Presence</span>
-            <Link href="/contact" className="hover:underline text-[#0B8F4D] font-semibold">
+            <span className="text-[#E3261E] font-bold">25+ Cities Presence</span>
+            <Link href="/contact" className="hover:underline text-[#E3261E] font-semibold">
               Request Site Technical Support
             </Link>
           </div>
@@ -150,10 +150,10 @@ export const Navbar: React.FC = () => {
                     href={link.href}
                     className={`flex items-center gap-1 py-2 font-semibold text-sm transition-colors duration-200 ${
                       isActive
-                        ? 'text-[#0B8F4D]'
+                        ? 'text-[#E3261E]'
                         : isTransparent
-                        ? 'text-white hover:text-[#0B8F4D]'
-                        : 'text-[#111111] hover:text-[#0B8F4D]'
+                        ? 'text-white hover:text-[#E3261E]'
+                        : 'text-[#111111] hover:text-[#E3261E]'
                     }`}
                   >
                     {link.name}
@@ -172,7 +172,7 @@ export const Navbar: React.FC = () => {
                         </div>
                         <Link
                           href="/products"
-                          className="text-xs font-bold text-[#0B8F4D] hover:underline flex items-center gap-1"
+                          className="text-xs font-bold text-[#E3261E] hover:underline flex items-center gap-1"
                         >
                           All Products <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
@@ -184,13 +184,13 @@ export const Navbar: React.FC = () => {
                           <Link
                             key={cat.id}
                             href={`/products?category=${cat.id}`}
-                            className="flex items-start gap-3 p-3 rounded-xl bg-white hover:bg-[#F8FAF8] border border-transparent hover:border-[#0B8F4D] transition-all duration-200 text-left shadow-2xs hover:shadow-xs group/cat"
+                            className="flex items-start gap-3 p-3 rounded-xl bg-white hover:bg-[#F8FAF8] border border-transparent hover:border-[#E3261E] transition-all duration-200 text-left shadow-2xs hover:shadow-xs group/cat"
                           >
-                            <div className="p-2 bg-[#0B8F4D]/10 rounded-lg text-[#0B8F4D] shrink-0 group-hover/cat:bg-[#0B8F4D] group-hover/cat:text-white transition-colors duration-200">
+                            <div className="p-2 bg-[#E3261E]/10 rounded-lg text-[#E3261E] shrink-0 group-hover/cat:bg-[#E3261E] group-hover/cat:text-white transition-colors duration-200">
                               {getCategoryIcon(cat.iconName)}
                             </div>
                             <div>
-                              <div className="text-sm font-bold text-[#111111] group-hover/cat:text-[#0B8F4D] transition-colors duration-200">
+                              <div className="text-sm font-bold text-[#111111] group-hover/cat:text-[#E3261E] transition-colors duration-200">
                                 {cat.name}
                               </div>
                               <p className="text-xs text-[#666666] line-clamp-1 mt-0.5 font-normal">
@@ -212,15 +212,15 @@ export const Navbar: React.FC = () => {
                 href={link.href}
                 className={`py-2 font-semibold text-sm transition-colors duration-200 relative ${
                   isActive
-                    ? 'text-[#0B8F4D]'
+                    ? 'text-[#E3261E]'
                     : isTransparent
-                    ? 'text-white hover:text-[#0B8F4D]'
-                    : 'text-[#111111] hover:text-[#0B8F4D]'
+                    ? 'text-white hover:text-[#E3261E]'
+                    : 'text-[#111111] hover:text-[#E3261E]'
                 }`}
               >
                 {link.name}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0B8F4D] rounded-full" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E3261E] rounded-full" />
                 )}
               </Link>
             );
@@ -303,12 +303,12 @@ export const Navbar: React.FC = () => {
                         onClick={() => setMobileMenuOpen(false)}
                         className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold text-base transition-colors ${
                           isActive
-                            ? 'bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20'
+                            ? 'bg-[#E3261E]/10 text-[#E3261E] border border-[#E3261E]/20'
                             : 'text-[#111111] hover:bg-[#F8FAF8]'
                         }`}
                       >
                         <span>{link.name}</span>
-                        {isActive && <span className="w-2 h-2 rounded-full bg-[#0B8F4D]" />}
+                        {isActive && <span className="w-2 h-2 rounded-full bg-[#E3261E]" />}
                       </Link>
                     );
                   })}
@@ -332,7 +332,7 @@ export const Navbar: React.FC = () => {
                     href={COMPANY_INFO.socialLinks.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-[#F8FAF8] hover:bg-[#0B8F4D] hover:text-white text-[#0B8F4D] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
+                    className="p-3 bg-[#F8FAF8] hover:bg-[#E3261E] hover:text-white text-[#E3261E] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
                     title="WhatsApp"
                   >
                     <WhatsAppIcon />
@@ -341,7 +341,7 @@ export const Navbar: React.FC = () => {
                     href={COMPANY_INFO.socialLinks.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-[#F8FAF8] hover:bg-[#0B8F4D] hover:text-white text-[#111111] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
+                    className="p-3 bg-[#F8FAF8] hover:bg-[#E3261E] hover:text-white text-[#111111] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
                     title="Instagram"
                   >
                     <InstagramIcon />
@@ -350,7 +350,7 @@ export const Navbar: React.FC = () => {
                     href={COMPANY_INFO.socialLinks.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-[#F8FAF8] hover:bg-[#0B8F4D] hover:text-white text-[#111111] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
+                    className="p-3 bg-[#F8FAF8] hover:bg-[#E3261E] hover:text-white text-[#111111] rounded-full border border-[#E5E7EB] transition-colors shadow-xs"
                     title="Facebook"
                   >
                     <FacebookIcon />

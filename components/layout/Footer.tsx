@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
         {/* Top Newsletter Strip */}
         <div className="bg-[#F8FAF8] border border-[#E5E7EB] p-8 rounded-2xl mb-16 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#0B8F4D]">Technical Bulletins</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#E3261E]">Technical Bulletins</span>
             <h3 className="text-2xl font-extrabold text-[#111111] mt-1">
               Subscribe to Fastener Technical Bulletins & Catalog Updates
             </h3>
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
 
           <form onSubmit={handleSubscribe} className="w-full md:w-auto flex items-center gap-2">
             {subscribed ? (
-              <div className="flex items-center gap-2 text-sm text-[#0B8F4D] bg-[#0B8F4D]/10 px-5 py-3 rounded-lg border border-[#0B8F4D]/20 font-semibold">
+              <div className="flex items-center gap-2 text-sm text-[#E3261E] bg-[#E3261E]/10 px-5 py-3 rounded-lg border border-[#E3261E]/20 font-semibold">
                 <CheckCircle className="w-5 h-5" /> Subscribed Successfully!
               </div>
             ) : (
@@ -57,11 +57,11 @@ export const Footer: React.FC = () => {
                   placeholder="Enter corporate email..."
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
-                  className="bg-white border border-[#E5E7EB] text-[#111111] text-sm px-4 py-3 rounded-lg focus:outline-none focus:border-[#0B8F4D] w-full md:w-64"
+                  className="bg-white border border-[#E5E7EB] text-[#111111] text-sm px-4 py-3 rounded-lg focus:outline-none focus:border-[#E3261E] w-full md:w-64"
                 />
                 <button
                   type="submit"
-                  className="bg-[#0B8F4D] hover:bg-[#086938] text-white px-5 py-3 rounded-lg font-bold text-sm transition-colors shrink-0 flex items-center gap-2 cursor-pointer"
+                  className="bg-[#E3261E] hover:bg-[#B81D17] text-white px-5 py-3 rounded-lg font-bold text-sm transition-colors shrink-0 flex items-center gap-2 cursor-pointer"
                 >
                   Subscribe <Send className="w-4 h-4" />
                 </button>
@@ -91,28 +91,28 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="pt-2 flex items-center gap-3">
-              <a href={COMPANY_INFO.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#0B8F4D] rounded-lg text-[#111111] hover:text-[#0B8F4D] transition-colors" title="Instagram">
+              <a href={COMPANY_INFO.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#E3261E] rounded-lg text-[#111111] hover:text-[#E3261E] transition-colors" title="Instagram">
                 <span className="text-xs font-bold font-mono">IG</span>
               </a>
-              <a href={COMPANY_INFO.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#0B8F4D] rounded-lg text-[#111111] hover:text-[#0B8F4D] transition-colors" title="Facebook">
+              <a href={COMPANY_INFO.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#E3261E] rounded-lg text-[#111111] hover:text-[#E3261E] transition-colors" title="Facebook">
                 <span className="text-xs font-bold font-mono">FB</span>
               </a>
-              <a href={COMPANY_INFO.socialLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#0B8F4D] rounded-lg text-[#111111] hover:text-[#0B8F4D] transition-colors" title="WhatsApp">
-                <MessageCircle className="w-4 h-4 text-[#0B8F4D]" />
+              <a href={COMPANY_INFO.socialLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#F8FAF8] border border-[#E5E7EB] hover:border-[#E3261E] rounded-lg text-[#111111] hover:text-[#E3261E] transition-colors" title="WhatsApp">
+                <MessageCircle className="w-4 h-4 text-[#E3261E]" />
               </a>
             </div>
           </div>
 
           {/* Column 2: Product Categories */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#0B8F4D] pl-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#E3261E] pl-3">
               Product Systems
             </h4>
             <ul className="space-y-2.5 text-sm text-[#666666]">
               {PRODUCT_CATEGORIES.map((cat) => (
                 <li key={cat.id}>
-                  <Link href={`/products?category=${cat.id}`} className="hover:text-[#0B8F4D] transition-colors flex items-center gap-2 font-normal">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0B8F4D]" />
+                  <Link href={`/products?category=${cat.id}`} className="hover:text-[#E3261E] transition-colors flex items-center gap-2 font-normal">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E3261E]" />
                     {cat.name}
                   </Link>
                 </li>
@@ -122,14 +122,14 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Engineering Services */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#0B8F4D] pl-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#E3261E] pl-3">
               Engineering Services
             </h4>
             <ul className="space-y-2.5 text-sm text-[#666666]">
               {SERVICES.map((srv) => (
                 <li key={srv.id}>
-                  <Link href="/services" className="hover:text-[#0B8F4D] transition-colors flex items-center gap-2 font-normal">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0B8F4D]" />
+                  <Link href="/services" className="hover:text-[#E3261E] transition-colors flex items-center gap-2 font-normal">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E3261E]" />
                     {srv.title}
                   </Link>
                 </li>
@@ -139,25 +139,25 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Contact & Google Map */}
           <div className="space-y-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#0B8F4D] pl-3">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-4 border-l-2 border-[#E3261E] pl-3">
               Corporate Office & Location
             </h4>
 
             <div className="space-y-2.5 text-xs text-[#666666]">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#E3261E] shrink-0 mt-0.5" />
                 <span>{COMPANY_INFO.address}</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#0B8F4D] shrink-0" />
-                <a href="tel:+917235055577" className="text-[#111111] font-semibold hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a>
+                <Phone className="w-4 h-4 text-[#E3261E] shrink-0" />
+                <a href="tel:+917235055577" className="text-[#111111] font-semibold hover:text-[#E3261E] transition-colors">{COMPANY_INFO.phone}</a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#0B8F4D] shrink-0" />
+                <Mail className="w-4 h-4 text-[#E3261E] shrink-0" />
                 <span className="text-[#111111] font-semibold">{COMPANY_INFO.email}</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-[#0B8F4D] shrink-0" />
+                <Clock className="w-4 h-4 text-[#E3261E] shrink-0" />
                 <span>{COMPANY_INFO.workingHours}</span>
               </div>
             </div>
@@ -170,7 +170,7 @@ export const Footer: React.FC = () => {
                   href="https://maps.google.com/?q=T1,+Shree+Prabhu+Vatika,+Near+Shri+Ram+Education+Center,+Panki+B+Block,+208020"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0B8F4D] hover:bg-[#086938] text-white text-[11px] font-bold px-3 py-1.5 rounded-md flex items-center gap-1.5 shadow-xs transition-colors"
+                  className="bg-[#E3261E] hover:bg-[#B81D17] text-white text-[11px] font-bold px-3 py-1.5 rounded-md flex items-center gap-1.5 shadow-xs transition-colors"
                 >
                   <MapPin className="w-3.5 h-3.5" /> View Office Map
                 </a>
@@ -183,10 +183,10 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#666666] gap-4">
           <p>© {new Date().getFullYear()} {COMPANY_INFO.legalName} All rights reserved.</p>
           <div className="flex items-center gap-6 font-medium">
-            <Link href="/about" className="hover:text-[#0B8F4D] transition-colors">About Us</Link>
-            <Link href="/products" className="hover:text-[#0B8F4D] transition-colors">Products</Link>
-            <Link href="/services" className="hover:text-[#0B8F4D] transition-colors">Services</Link>
-            <Link href="/contact" className="hover:text-[#0B8F4D] transition-colors">Contact & RFQ</Link>
+            <Link href="/about" className="hover:text-[#E3261E] transition-colors">About Us</Link>
+            <Link href="/products" className="hover:text-[#E3261E] transition-colors">Products</Link>
+            <Link href="/services" className="hover:text-[#E3261E] transition-colors">Services</Link>
+            <Link href="/contact" className="hover:text-[#E3261E] transition-colors">Contact & RFQ</Link>
           </div>
         </div>
       </div>

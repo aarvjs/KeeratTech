@@ -30,7 +30,7 @@ export const FAQSection: React.FC = () => {
                 key={faq.id}
                 className={`bg-white rounded-xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? 'border-[#0B8F4D] shadow-xs'
+                    ? 'border-[#E3261E] shadow-xs'
                     : 'border-[#E5E7EB] hover:border-slate-300'
                 }`}
               >
@@ -39,12 +39,12 @@ export const FAQSection: React.FC = () => {
                   className="w-full px-6 py-4 text-left font-bold text-sm sm:text-base text-[#111111] flex items-center justify-between gap-4 cursor-pointer"
                 >
                   <span className="flex items-center gap-3">
-                    <HelpCircle className={`w-4 h-4 shrink-0 ${isOpen ? 'text-[#0B8F4D]' : 'text-[#666666]'}`} />
+                    <HelpCircle className={`w-4 h-4 shrink-0 ${isOpen ? 'text-[#E3261E]' : 'text-[#666666]'}`} />
                     {faq.question}
                   </span>
                   <ChevronDown
                     className={`w-4 h-4 text-[#666666] shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-[#0B8F4D]' : ''
+                      isOpen ? 'rotate-180 text-[#E3261E]' : ''
                     }`}
                   />
                 </button>

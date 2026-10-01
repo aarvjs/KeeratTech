@@ -23,17 +23,17 @@ export default function AboutPage() {
     {
       title: 'Uncompromising Integrity',
       desc: 'Zero tolerance for structural defect. All products tested for extreme wind shear, R120 fire resistance, and C1/C2 seismic loading.',
-      icon: <ShieldCheck className="w-6 h-6 text-[#0B8F4D]" />,
+      icon: <ShieldCheck className="w-6 h-6 text-[#E3261E]" />,
     },
     {
       title: 'Engineering Innovation',
       desc: 'Continuous R&D in high-tensile metallurgy and low-VOC pure epoxy mortars for 100-year design life.',
-      icon: <Lightbulb className="w-6 h-6 text-[#0B8F4D]" />,
+      icon: <Lightbulb className="w-6 h-6 text-[#E3261E]" />,
     },
     {
       title: 'Client Partnership',
       desc: 'On-site technical support engineers assist contractors with Revit 3D BIM models and onsite pull load testing.',
-      icon: <HeartHandshake className="w-6 h-6 text-[#0B8F4D]" />,
+      icon: <HeartHandshake className="w-6 h-6 text-[#E3261E]" />,
     },
   ];
 
@@ -65,7 +65,7 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[#E5E7EB]">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-lg">
+                  <div className="p-2 bg-[#E3261E]/10 text-[#E3261E] rounded-lg">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-lg">
+                  <div className="p-2 bg-[#E3261E]/10 text-[#E3261E] rounded-lg">
                     <Award className="w-6 h-6" />
                   </div>
                   <div>
@@ -112,8 +112,8 @@ export default function AboutPage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-            <div className="bg-white p-8 rounded-2xl border border-[#E5E7EB] shadow-xs relative group hover:border-[#0B8F4D] transition-colors">
-              <div className="w-12 h-12 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl flex items-center justify-center mb-5">
+            <div className="bg-white p-8 rounded-2xl border border-[#E5E7EB] shadow-xs relative group hover:border-[#E3261E] transition-colors">
+              <div className="w-12 h-12 bg-[#E3261E]/10 text-[#E3261E] rounded-xl flex items-center justify-center mb-5">
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-[#111111] mb-2">Our Corporate Vision</h3>
@@ -122,8 +122,8 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl border border-[#E5E7EB] shadow-xs relative group hover:border-[#0B8F4D] transition-colors">
-              <div className="w-12 h-12 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-xl flex items-center justify-center mb-5">
+            <div className="bg-white p-8 rounded-2xl border border-[#E5E7EB] shadow-xs relative group hover:border-[#E3261E] transition-colors">
+              <div className="w-12 h-12 bg-[#E3261E]/10 text-[#E3261E] rounded-xl flex items-center justify-center mb-5">
                 <Compass className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-[#111111] mb-2">Our Engineering Mission</h3>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             {coreValues.map((val, idx) => (
-              <div key={idx} className="bg-[#F8FAF8] p-7 rounded-2xl border border-[#E5E7EB] hover:border-[#0B8F4D] transition-colors shadow-xs">
+              <div key={idx} className="bg-[#F8FAF8] p-7 rounded-2xl border border-[#E5E7EB] hover:border-[#E3261E] transition-colors shadow-xs">
                 <div className="p-3 bg-white border border-[#E5E7EB] rounded-xl inline-block mb-4">
                   {val.icon}
                 </div>
@@ -169,8 +169,8 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-5 mt-10">
             {milestones.map((item, idx) => (
-              <div key={idx} className="bg-white p-5 rounded-xl border border-[#E5E7EB] shadow-xs hover:border-[#0B8F4D] transition-all">
-                <div className="text-2xl font-black text-[#0B8F4D] mb-1">{item.year}</div>
+              <div key={idx} className="bg-white p-5 rounded-xl border border-[#E5E7EB] shadow-xs hover:border-[#E3261E] transition-all">
+                <div className="text-2xl font-black text-[#E3261E] mb-1">{item.year}</div>
                 <h4 className="text-sm font-bold text-[#111111] mb-1.5">{item.title}</h4>
                 <p className="text-xs text-[#666666] leading-relaxed font-normal">{item.desc}</p>
               </div>
@@ -199,14 +199,14 @@ export default function AboutPage() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 right-3 bg-[#0B8F4D] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-xs">
+                  <div className="absolute top-3 right-3 bg-[#E3261E] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-xs">
                     {member.experience}
                   </div>
                 </div>
 
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-[#111111]">{member.name}</h3>
-                  <p className="text-xs font-bold text-[#0B8F4D] uppercase mt-0.5 mb-2">{member.role}</p>
+                  <p className="text-xs font-bold text-[#E3261E] uppercase mt-0.5 mb-2">{member.role}</p>
                   <p className="text-xs text-[#666666] leading-relaxed font-normal">{member.bio}</p>
                 </div>
               </div>

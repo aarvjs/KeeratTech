@@ -29,24 +29,24 @@ export const Button: React.FC<ButtonProps> = ({
   // Base background & text styles for variants
   const variants = {
     primary:
-      'bg-[#0F172A] text-white border border-[#0B8F4D]/40 focus:ring-[#0B8F4D]',
+      'bg-[#0F172A] text-white border border-[#E3261E]/40 focus:ring-[#E3261E]',
     secondary:
-      'bg-white text-slate-900 border border-slate-200 focus:ring-[#0B8F4D]',
+      'bg-white text-slate-900 border border-slate-200 focus:ring-[#E3261E]',
     outline:
-      'bg-transparent text-[#0B8F4D] border-2 border-[#0B8F4D] focus:ring-[#0B8F4D]',
+      'bg-transparent text-[#E3261E] border-2 border-[#E3261E] focus:ring-[#E3261E]',
     dark:
       'bg-slate-950 text-white border border-white/20 focus:ring-slate-900',
     ghost:
-      'bg-transparent text-slate-700 hover:text-[#0B8F4D] focus:ring-slate-300',
+      'bg-transparent text-slate-700 hover:text-[#E3261E] focus:ring-slate-300',
   };
 
   // Water fill layer colors per variant
   const fillColors = {
-    primary: 'bg-[#0B8F4D]',
-    secondary: 'bg-[#0B8F4D]',
-    outline: 'bg-[#0B8F4D]',
-    dark: 'bg-[#0B8F4D]',
-    ghost: 'bg-[#0B8F4D]/10',
+    primary: 'bg-[#E3261E]',
+    secondary: 'bg-[#E3261E]',
+    outline: 'bg-[#E3261E]',
+    dark: 'bg-[#E3261E]',
+    ghost: 'bg-[#E3261E]/10',
   };
 
   // Hover text colors when water fills
@@ -55,7 +55,7 @@ export const Button: React.FC<ButtonProps> = ({
     secondary: 'group-hover:text-white',
     outline: 'group-hover:text-white',
     dark: 'group-hover:text-white',
-    ghost: 'group-hover:text-[#0B8F4D]',
+    ghost: 'group-hover:text-[#E3261E]',
   };
 
   const sizes = {

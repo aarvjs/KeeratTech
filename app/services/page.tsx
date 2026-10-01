@@ -48,7 +48,7 @@ export default function ServicesPage() {
 
                 {/* Content */}
                 <div className={`lg:col-span-6 space-y-5 ${isEven ? '' : 'lg:order-1'}`}>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B8F4D]/10 text-[#0B8F4D] text-xs font-bold uppercase">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E3261E]/10 text-[#E3261E] text-xs font-bold uppercase">
                     <Wrench className="w-3.5 h-3.5" /> Turnkey Contracting
                   </div>
 
@@ -64,7 +64,7 @@ export default function ServicesPage() {
                     <h4 className="text-xs font-bold uppercase tracking-wider text-[#666666]">Key Capabilities:</h4>
                     {service.features.map((feat, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-2.5 text-xs text-[#111111] font-medium">
-                        <CheckCircle2 className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-[#E3261E] shrink-0 mt-0.5" />
                         <span>{feat}</span>
                       </div>
                     ))}
@@ -116,7 +116,7 @@ export default function ServicesPage() {
               { num: '04', title: 'Proof Pull Test & Certify', desc: 'Hydraulic tension load test with official NABL certified test report.' },
             ].map((step, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl border border-[#E5E7EB] shadow-xs relative">
-                <span className="text-2xl font-black text-[#0B8F4D] block mb-2">{step.num}</span>
+                <span className="text-2xl font-black text-[#E3261E] block mb-2">{step.num}</span>
                 <h4 className="text-base font-bold text-[#111111] mb-1.5">{step.title}</h4>
                 <p className="text-xs text-[#666666] leading-relaxed font-normal">{step.desc}</p>
               </div>

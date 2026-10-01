@@ -26,7 +26,7 @@ export const AboutPreviewSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 text-white bg-white/95 backdrop-blur-md p-5 rounded-xl border border-[#E5E7EB] text-[#111111] shadow-md">
-                <span className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider">Engineering Compliance</span>
+                <span className="text-xs font-bold text-[#E3261E] uppercase tracking-wider">Engineering Compliance</span>
                 <h4 className="text-base font-bold text-[#111111] mt-0.5">ETA-Option 1 & ISO 9001 Approved</h4>
                 <p className="text-xs text-[#666666] mt-1">Certified for cracked concrete, R120 fire resistance, and C1/C2 seismic loading.</p>
               </div>
@@ -34,7 +34,7 @@ export const AboutPreviewSection: React.FC = () => {
 
             {/* Overlapping Badge */}
             <div className="absolute -top-5 -right-5 hidden sm:flex items-center gap-3 bg-white text-[#111111] p-4 rounded-xl shadow-lg border border-[#E5E7EB]">
-              <div className="p-2 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-lg">
+              <div className="p-2 bg-[#E3261E]/10 text-[#E3261E] rounded-lg">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
@@ -61,7 +61,7 @@ export const AboutPreviewSection: React.FC = () => {
                 '24-hour turnaround for emergency site deliveries across 25+ cities',
               ].map((point, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <div className="p-1 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-md shrink-0 mt-0.5">
+                  <div className="p-1 bg-[#E3261E]/10 text-[#E3261E] rounded-md shrink-0 mt-0.5">
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium text-[#111111]">{point}</span>
@@ -72,7 +72,7 @@ export const AboutPreviewSection: React.FC = () => {
             {/* 4 Statistics Cards */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-[#E5E7EB]">
               <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] text-center shadow-xs">
-                <div className="text-2xl font-black text-[#0B8F4D]">
+                <div className="text-2xl font-black text-[#E3261E]">
                   <AnimatedCounter end={40} suffix="+" />
                 </div>
                 <div className="text-[11px] font-bold text-[#666666] uppercase mt-0.5">Years</div>
@@ -86,7 +86,7 @@ export const AboutPreviewSection: React.FC = () => {
               </div>
 
               <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] text-center shadow-xs">
-                <div className="text-2xl font-black text-[#0B8F4D]">
+                <div className="text-2xl font-black text-[#E3261E]">
                   <AnimatedCounter end={2500} suffix="+" />
                 </div>
                 <div className="text-[11px] font-bold text-[#666666] uppercase mt-0.5">Clients</div>

@@ -44,7 +44,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-white text-[#111111] selection:bg-[#0B8F4D] selection:text-white relative">
+      <body className="min-h-full flex flex-col bg-white text-[#111111] selection:bg-[#E3261E] selection:text-white relative">
         <Navbar />
         <div className="flex-grow">{children}</div>
         <FloatingSocialButtons />

@@ -62,9 +62,9 @@ export const AboutHeroCarousel: React.FC = () => {
           transition={{ duration: 0.4 }}
           className="inline-flex items-center gap-2 text-xs font-semibold text-slate-200"
         >
-          <Link href="/" className="hover:text-[#0B8F4D] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#E3261E] transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-          <span className="text-[#0B8F4D] font-bold">About Us</span>
+          <span className="text-[#E3261E] font-bold">About Us</span>
         </motion.nav>
 
         {/* Small Glass Badge */}
@@ -75,7 +75,7 @@ export const AboutHeroCarousel: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[11px] font-extrabold uppercase tracking-wider"
           >
-            <ShieldCheck className="w-3.5 h-3.5 text-[#0B8F4D]" />
+            <ShieldCheck className="w-3.5 h-3.5 text-[#E3261E]" />
             ABOUT KEERAT ELECTECH
           </motion.span>
         </div>
@@ -88,7 +88,7 @@ export const AboutHeroCarousel: React.FC = () => {
           className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight"
         >
           Building Trust Through <br />
-          <span className="text-[#0B8F4D]">Keerat Electech</span> Excellence
+          <span className="text-[#E3261E]">Keerat Electech</span> Excellence
         </motion.h1>
 
         {/* Short Description (STRICT 2-LINE MAXIMUM) */}
