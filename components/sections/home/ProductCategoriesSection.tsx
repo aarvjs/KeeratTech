@@ -22,7 +22,7 @@ export const ProductCategoriesSection: React.FC = () => {
             <Link
               key={category.id}
               href={`/products?category=${category.id}`}
-              className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-[#E3261E] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+              className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-[#0B8F4D] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
             >
               {/* Image Header */}
               <div className="relative h-48 w-full overflow-hidden bg-slate-200">
@@ -42,16 +42,16 @@ export const ProductCategoriesSection: React.FC = () => {
               {/* Body */}
               <div className="p-6 flex flex-col flex-grow justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#E3261E] transition-colors duration-200 flex items-center justify-between">
+                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#0B8F4D] transition-colors duration-200 flex items-center justify-between">
                     {category.name}
-                    <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-[#E3261E] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200" />
+                    <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-[#0B8F4D] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200" />
                   </h3>
                   <p className="text-sm text-slate-600 mt-2 leading-relaxed line-clamp-3">
                     {category.description}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center text-xs font-bold text-[#E3261E]">
+                <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center text-xs font-bold text-[#0B8F4D]">
                   <span>View Category Products</span>
                   <span className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                 </div>

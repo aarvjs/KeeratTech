@@ -36,7 +36,7 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-bold uppercase tracking-wider"
           >
-            <ShieldCheck className="w-4 h-4 text-[#E3261E]" />
+            <ShieldCheck className="w-4 h-4 text-[#0B8F4D]" />
             ETA Option 1 & ISO Certified Fasteners
           </motion.div>
 
@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-white"
           >
             Building the Future with <br />
-            <span className="text-[#E3261E]">Industrial Strength</span>
+            <span className="text-[#0B8F4D]">Industrial Strength</span>
           </motion.h1>
 
           {/* Short Paragraph (2-3 lines maximum) */}
@@ -95,7 +95,7 @@ export const HeroSection: React.FC = () => {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1 h-2 bg-[#E3261E] rounded-full"
+            className="w-1 h-2 bg-[#0B8F4D] rounded-full"
           />
         </div>
       </div>

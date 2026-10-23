@@ -21,14 +21,14 @@ export const CertificateMockupCard: React.FC<CertificateMockupProps> = ({
   date,
 }) => {
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-[#E5E7EB] hover:border-[#E3261E] shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between h-full">
-      {/* Thin Red Border Frame */}
-      <div className="border border-[#E3261E]/30 p-5 rounded-xl bg-white relative">
+    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-[#E5E7EB] hover:border-[#0B8F4D] shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col justify-between h-full">
+      {/* Thin Green Border Frame */}
+      <div className="border border-[#0B8F4D]/30 p-5 rounded-xl bg-white relative">
         
         {/* Top Audit Header */}
         <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3 mb-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-[#E3261E] text-white flex items-center justify-center font-bold text-[10px]">
+            <div className="w-6 h-6 rounded-md bg-[#0B8F4D] text-white flex items-center justify-center font-bold text-[10px]">
               KE
             </div>
             <span className="text-[11px] font-bold text-[#111111] uppercase tracking-wider">
@@ -36,14 +36,14 @@ export const CertificateMockupCard: React.FC<CertificateMockupProps> = ({
             </span>
           </div>
 
-          <span className="text-[10px] font-mono text-[#E3261E] bg-[#E3261E]/10 px-2 py-0.5 rounded font-semibold">
+          <span className="text-[10px] font-mono text-[#0B8F4D] bg-[#0B8F4D]/10 px-2 py-0.5 rounded font-semibold">
             {code}
           </span>
         </div>
 
         {/* Certificate Title */}
         <div className="text-center py-2 space-y-1">
-          <span className="text-[9px] font-extrabold uppercase tracking-widest text-[#E3261E] block">
+          <span className="text-[9px] font-extrabold uppercase tracking-widest text-[#0B8F4D] block">
             CERTIFICATE OF COMPLIANCE
           </span>
           <h4 className="text-base font-bold text-[#111111] leading-snug">
@@ -70,8 +70,8 @@ export const CertificateMockupCard: React.FC<CertificateMockupProps> = ({
               </div>
             </div>
             <div className="hidden sm:block">
-              <span className="text-[10px] font-bold text-[#E3261E] flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3 text-[#E3261E]" /> Verified
+              <span className="text-[10px] font-bold text-[#0B8F4D] flex items-center gap-1">
+                <ShieldCheck className="w-3 h-3 text-[#0B8F4D]" /> Verified
               </span>
             </div>
           </div>

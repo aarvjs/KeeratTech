@@ -14,7 +14,7 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) => {
   return (
-    <div className="group bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#E3261E] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
+    <div className="group bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#0B8F4D] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
       
       {/* Image Container */}
       <div className="relative h-60 w-full overflow-hidden bg-[#F8FAF8]">
@@ -29,7 +29,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) 
           {product.category}
         </div>
         {product.isFeatured && (
-          <div className="absolute top-3 right-3 bg-[#E3261E] text-white text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs">
+          <div className="absolute top-3 right-3 bg-[#0B8F4D] text-white text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs">
             ETA Option 1
           </div>
         )}
@@ -37,11 +37,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) 
 
       {/* Card Body */}
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E3261E] transition-colors duration-200 line-clamp-1">
+        <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#0B8F4D] transition-colors duration-200 line-clamp-1">
           {product.name}
         </h3>
 
-        <p className="text-xs font-bold text-[#E3261E] uppercase tracking-wider mt-1 mb-2.5">
+        <p className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider mt-1 mb-2.5">
           {product.tagline}
         </p>
 
@@ -54,7 +54,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) 
           <p className="text-[10px] font-bold uppercase tracking-wider text-[#666666]">Approved Applications:</p>
           {product.applications.slice(0, 2).map((app, idx) => (
             <div key={idx} className="flex items-center text-xs text-[#111111] gap-2 font-medium">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#E3261E] shrink-0" />
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#0B8F4D] shrink-0" />
               <span className="truncate">{app}</span>
             </div>
           ))}

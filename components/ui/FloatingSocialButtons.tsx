@@ -75,8 +75,8 @@ export const FloatingSocialButtons: React.FC = () => {
             whileHover={{ scale: 1.15 }}
             className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 ${
               isPastHero
-                ? 'bg-white text-[#E3261E] border border-[#E5E7EB] shadow-lg hover:border-[#E3261E] hover:shadow-[#E3261E]/20'
-                : 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white hover:text-[#E3261E] shadow-md'
+                ? 'bg-white text-[#0B8F4D] border border-[#E5E7EB] shadow-lg hover:border-[#0B8F4D] hover:shadow-[#0B8F4D]/20'
+                : 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white hover:text-[#0B8F4D] shadow-md'
             }`}
             title={item.name}
           >
@@ -96,7 +96,7 @@ export const FloatingSocialButtons: React.FC = () => {
             whileTap={{ scale: 0.9 }}
             className={`w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
               isPastHero
-                ? 'bg-white text-[#E3261E] border border-[#E5E7EB]'
+                ? 'bg-white text-[#0B8F4D] border border-[#E5E7EB]'
                 : 'bg-slate-900/90 backdrop-blur-md text-white border border-white/20'
             }`}
             aria-label={item.name}

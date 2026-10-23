@@ -38,7 +38,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ project, onClose }
         {/* Content */}
         <div className="w-full md:w-2/5 p-6 md:p-8 flex flex-col justify-between text-white">
           <div>
-            <span className="inline-block px-3 py-1 bg-[#E3261E]/20 text-[#E3261E] border border-[#E3261E]/30 text-xs font-bold uppercase rounded-full mb-3">
+            <span className="inline-block px-3 py-1 bg-[#0B8F4D]/20 text-[#0B8F4D] border border-[#0B8F4D]/30 text-xs font-bold uppercase rounded-full mb-3">
               {project.category}
             </span>
             <h3 className="text-2xl font-extrabold text-white leading-tight mb-4">
@@ -51,15 +51,15 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ project, onClose }
 
             <div className="space-y-3 pt-4 border-t border-white/10 text-sm">
               <div className="flex items-center text-slate-300 gap-2">
-                <MapPin className="w-4 h-4 text-[#E3261E]" />
+                <MapPin className="w-4 h-4 text-[#0B8F4D]" />
                 <span>Location: <strong className="text-white">{project.location}</strong></span>
               </div>
               <div className="flex items-center text-slate-300 gap-2">
-                <Calendar className="w-4 h-4 text-[#E3261E]" />
+                <Calendar className="w-4 h-4 text-[#0B8F4D]" />
                 <span>Completion: <strong className="text-white">{project.year}</strong></span>
               </div>
               <div className="flex items-center text-slate-300 gap-2">
-                <Building2 className="w-4 h-4 text-[#E3261E]" />
+                <Building2 className="w-4 h-4 text-[#0B8F4D]" />
                 <span>Scope: <strong className="text-white">Turnkey Fixing & Anchor Supply</strong></span>
               </div>
             </div>
@@ -68,7 +68,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ project, onClose }
           <div className="mt-8 pt-4 border-t border-white/10">
             <button
               onClick={onClose}
-              className="w-full bg-[#E3261E] hover:bg-[#B81D17] text-white font-bold py-3 rounded-lg text-sm transition-colors"
+              className="w-full bg-[#0B8F4D] hover:bg-[#086938] text-white font-bold py-3 rounded-lg text-sm transition-colors"
             >
               Close Showcase
             </button>

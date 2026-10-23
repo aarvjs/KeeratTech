@@ -66,7 +66,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 priority
                 className="object-cover transition-all duration-300"
               />
-              <div className="absolute top-4 left-4 bg-[#E3261E] text-white text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+              <div className="absolute top-4 left-4 bg-[#0B8F4D] text-white text-xs font-bold px-3 py-1 rounded-full shadow-xs">
                 ETA Option 1 Rated
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     onClick={() => setActiveImage(img)}
                     className={`relative w-20 h-16 rounded-xl overflow-hidden border-2 shrink-0 transition-all cursor-pointer ${
                       (activeImage || product.image) === img
-                        ? 'border-[#E3261E] scale-105'
+                        ? 'border-[#0B8F4D] scale-105'
                         : 'border-[#E5E7EB] opacity-70 hover:opacity-100'
                     }`}
                   >
@@ -92,11 +92,11 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
             <div className="p-4 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB] flex items-center justify-between text-xs text-[#666666]">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#E3261E]" />
+                <ShieldCheck className="w-4 h-4 text-[#0B8F4D]" />
                 <span>Fire Rated R120 & Seismic C1/C2</span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="w-4 h-4 text-[#E3261E]" />
+                <Award className="w-4 h-4 text-[#0B8F4D]" />
                 <span>NABL Lab Verified</span>
               </div>
             </div>
@@ -105,13 +105,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           {/* Details */}
           <div className="lg:col-span-6 space-y-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#E3261E]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#0B8F4D]">
                 Category: {product.category}
               </span>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-[#111111] mt-1 leading-tight">
                 {product.name}
               </h1>
-              <p className="text-[#E3261E] font-bold text-xs uppercase tracking-wider mt-1">
+              <p className="text-[#0B8F4D] font-bold text-xs uppercase tracking-wider mt-1">
                 {product.tagline}
               </p>
             </div>
@@ -125,7 +125,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
               <h4 className="text-xs font-bold uppercase tracking-wider text-[#666666] mb-3">Key Product Features:</h4>
               {product.features.map((feat, idx) => (
                 <div key={idx} className="flex items-start gap-2 text-xs text-[#111111] font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-[#E3261E] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
                   <span>{feat}</span>
                 </div>
               ))}
@@ -138,7 +138,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                   <span className="text-xs text-[#666666] font-semibold uppercase">Supply Mode</span>
                   <p className="text-sm font-bold text-[#111111]">Direct EPC Project Supply & Technical RFQ</p>
                 </div>
-                <span className="bg-[#E3261E]/10 text-[#E3261E] border border-[#E3261E]/20 text-xs font-bold px-3 py-1 rounded-full">
+                <span className="bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20 text-xs font-bold px-3 py-1 rounded-full">
                   Showcase Only
                 </span>
               </div>
@@ -157,7 +157,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                   href="/contact"
                   className="bg-[#F8FAF8] hover:bg-slate-200 text-[#111111] border border-[#E5E7EB] font-bold text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-colors text-center"
                 >
-                  <FileText className="w-4 h-4 text-[#E3261E]" /> Technical Datasheet
+                  <FileText className="w-4 h-4 text-[#0B8F4D]" /> Technical Datasheet
                 </a>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
         {/* Specifications Table */}
         <div className="mt-16">
-          <h3 className="text-xl font-extrabold text-[#111111] mb-5 border-l-4 border-[#E3261E] pl-3">
+          <h3 className="text-xl font-extrabold text-[#111111] mb-5 border-l-4 border-[#0B8F4D] pl-3">
             Technical Specifications Table
           </h3>
 
@@ -195,13 +195,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           <div className="bg-[#F8FAF8] p-7 rounded-xl border border-[#E5E7EB]">
             <h4 className="text-base font-bold text-[#111111] mb-3 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#E3261E]" />
+              <span className="w-2 h-2 rounded-full bg-[#0B8F4D]" />
               Approved Jobsite Applications
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#111111]">
               {product.applications.map((app, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#E3261E] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
                   <span>{app}</span>
                 </li>
               ))}
@@ -210,13 +210,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
           <div className="bg-[#F8FAF8] p-7 rounded-xl border border-[#E5E7EB]">
             <h4 className="text-base font-bold text-[#111111] mb-3 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#E3261E]" />
+              <span className="w-2 h-2 rounded-full bg-[#0B8F4D]" />
               Engineering Advantages & Benefits
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#111111]">
               {product.benefits.map((ben, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#E3261E] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
                   <span>{ben}</span>
                 </li>
               ))}
@@ -229,10 +229,10 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           <div className="mt-20 pt-10 border-t border-[#E5E7EB]">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <span className="text-xs font-bold text-[#E3261E] uppercase tracking-wider">Complementary Systems</span>
+                <span className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider">Complementary Systems</span>
                 <h3 className="text-2xl font-extrabold text-[#111111]">Related Products</h3>
               </div>
-              <Link href="/products" className="text-xs font-bold text-[#E3261E] hover:underline flex items-center gap-1">
+              <Link href="/products" className="text-xs font-bold text-[#0B8F4D] hover:underline flex items-center gap-1">
                 View All Products <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

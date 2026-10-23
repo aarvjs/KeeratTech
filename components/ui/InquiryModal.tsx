@@ -46,7 +46,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
         {/* Header */}
         <div className="bg-slate-900 px-6 py-5 text-white flex items-center justify-between">
           <div>
-            <span className="text-xs font-bold text-[#E3261E] uppercase tracking-wider">Industrial RFQ</span>
+            <span className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider">Industrial RFQ</span>
             <h3 className="text-lg font-bold">Technical Quote Request</h3>
             {productName && (
               <p className="text-xs text-slate-300 mt-0.5 truncate">
@@ -66,7 +66,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
         <div className="p-6">
           {submitted ? (
             <div className="py-8 text-center space-y-4">
-              <div className="w-16 h-16 bg-[#E3261E]/10 text-[#E3261E] rounded-full flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-[#0B8F4D]/10 text-[#0B8F4D] rounded-full flex items-center justify-center mx-auto">
                 <CheckCircle className="w-10 h-10" />
               </div>
               <h4 className="text-xl font-bold text-slate-900">Inquiry Submitted Successfully</h4>
@@ -85,7 +85,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     placeholder="John Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
@@ -96,7 +96,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     placeholder="L&T Infrastructure"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                   />
                 </div>
               </div>
@@ -110,7 +110,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     placeholder="john@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                   />
                 </div>
                 <div>
@@ -121,7 +121,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                     placeholder="+91 98765 43210"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                    className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                   />
                 </div>
               </div>
@@ -133,7 +133,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   placeholder="e.g. 5,000 Pcs M16x150mm"
                   value={formData.quantity}
                   onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-                  className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                  className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                 />
               </div>
 
@@ -144,12 +144,12 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   placeholder="Specify concrete grade, edge distance requirements, delivery timeline..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#E3261E] focus:border-transparent outline-none"
+                  className="w-full px-3.5 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent outline-none"
                 ></textarea>
               </div>
 
               <div className="flex items-center gap-2 text-xs text-slate-500 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
-                <ShieldCheck className="w-4 h-4 text-[#E3261E] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#0B8F4D] shrink-0" />
                 <span>Includes technical datasheets, test reports & CAD design support.</span>
               </div>
 

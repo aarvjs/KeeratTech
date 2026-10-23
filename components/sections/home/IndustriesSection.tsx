@@ -73,7 +73,7 @@ export const IndustriesSection: React.FC = () => {
 
                 {/* Industry Name Overlay at Bottom */}
                 <div className="absolute bottom-5 left-5 right-5 z-10">
-                  <span className="w-6 h-0.5 bg-[#E3261E] block mb-2 group-hover:w-10 transition-all duration-300" />
+                  <span className="w-6 h-0.5 bg-[#0B8F4D] block mb-2 group-hover:w-10 transition-all duration-300" />
                   <h3 className="text-lg font-extrabold text-white leading-snug">
                     {ind.title}
                   </h3>

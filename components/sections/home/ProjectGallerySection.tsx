@@ -35,7 +35,7 @@ export const ProjectGallerySection: React.FC = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-[#E3261E] text-white shadow-xs'
+                  ? 'bg-[#0B8F4D] text-white shadow-xs'
                   : 'bg-white text-[#111111] hover:bg-[#F8FAF8] border border-[#E5E7EB]'
               }`}
             >
@@ -72,11 +72,11 @@ export const ProjectGallerySection: React.FC = () => {
 
               <div className="p-5 flex flex-col justify-between flex-grow">
                 <div>
-                  <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E3261E] transition-colors leading-snug">
+                  <h3 className="text-base font-bold text-[#111111] group-hover:text-[#0B8F4D] transition-colors leading-snug">
                     {project.title}
                   </h3>
                   <div className="flex items-center gap-1.5 text-xs text-[#666666] mt-2">
-                    <MapPin className="w-3.5 h-3.5 text-[#E3261E]" />
+                    <MapPin className="w-3.5 h-3.5 text-[#0B8F4D]" />
                     <span>{project.location} • {project.year}</span>
                   </div>
                 </div>

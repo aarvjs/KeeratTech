@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #E3261E;
-    --primary-dark: #B81D17;
-    --primary-light: #EF4444;
+    --primary: #0B8F4D;
+    --primary-dark: #086938;
+    --primary-light: #0EAF5F;
     --bg-white: #FFFFFF;
     --bg-light: #F8FAF8;
     --text-main: #111111;
@@ -37,11 +37,11 @@
   background: #F8FAF8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E3261E;
+  background: #0B8F4D;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B81D17;
+  background: #086938;
 }
 
 /* Infinite Marquee Keyframe */

@@ -11,13 +11,13 @@ export const CTABannerSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="bg-[#F8FAF8] rounded-3xl p-10 sm:p-16 border border-[#E5E7EB] shadow-sm text-center relative overflow-hidden">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E3261E]/10 text-[#E3261E] border border-[#E3261E]/20 text-xs font-bold uppercase tracking-wider mb-6">
-            <ShieldCheck className="w-4 h-4 text-[#E3261E]" /> Engineering Technical Support
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20 text-xs font-bold uppercase tracking-wider mb-6">
+            <ShieldCheck className="w-4 h-4 text-[#0B8F4D]" /> Engineering Technical Support
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111111] max-w-3xl mx-auto leading-tight">
             Need Heavy Fastening Solutions? <br />
-            <span className="text-[#E3261E]">Let&apos;s Build Together.</span>
+            <span className="text-[#0B8F4D]">Let&apos;s Build Together.</span>
           </h2>
 
           <p className="mt-4 text-[#666666] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
@@ -38,7 +38,7 @@ export const CTABannerSection: React.FC = () => {
               href="tel:+917235055577"
               variant="secondary"
               size="lg"
-              icon={<PhoneCall className="w-5 h-5 text-[#E3261E]" />}
+              icon={<PhoneCall className="w-5 h-5 text-[#0B8F4D]" />}
             >
               Call: {COMPANY_INFO.phone}
             </Button>

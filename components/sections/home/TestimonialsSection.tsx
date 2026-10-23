@@ -38,7 +38,7 @@ export const TestimonialsSection: React.FC = () => {
         <div className="max-w-3xl mx-auto relative mt-10">
           {/* Card */}
           <div className="bg-[#F8FAF8] rounded-2xl p-8 sm:p-10 text-[#111111] border border-[#E5E7EB] shadow-xs relative">
-            <Quote className="absolute top-6 right-6 w-16 h-16 text-[#E3261E]/10 pointer-events-none" />
+            <Quote className="absolute top-6 right-6 w-16 h-16 text-[#0B8F4D]/10 pointer-events-none" />
 
             <div className="flex items-center gap-1 mb-5">
               {[...Array(activeTestimonial.rating)].map((_, i) => (
@@ -52,7 +52,7 @@ export const TestimonialsSection: React.FC = () => {
 
             <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-5">
               <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#E3261E]">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#0B8F4D]">
                   <Image
                     src={activeTestimonial.avatar}
                     alt={activeTestimonial.clientName}
@@ -62,7 +62,7 @@ export const TestimonialsSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-[#111111]">{activeTestimonial.clientName}</h4>
-                  <p className="text-xs text-[#E3261E] font-bold">{activeTestimonial.role}</p>
+                  <p className="text-xs text-[#0B8F4D] font-bold">{activeTestimonial.role}</p>
                   <p className="text-xs text-[#666666]">{activeTestimonial.company}</p>
                 </div>
               </div>
@@ -71,14 +71,14 @@ export const TestimonialsSection: React.FC = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
-                  className="p-2.5 bg-white border border-[#E5E7EB] text-[#111111] hover:border-[#E3261E] hover:text-[#E3261E] rounded-full transition-colors cursor-pointer"
+                  className="p-2.5 bg-white border border-[#E5E7EB] text-[#111111] hover:border-[#0B8F4D] hover:text-[#0B8F4D] rounded-full transition-colors cursor-pointer"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="p-2.5 bg-white border border-[#E5E7EB] text-[#111111] hover:border-[#E3261E] hover:text-[#E3261E] rounded-full transition-colors cursor-pointer"
+                  className="p-2.5 bg-white border border-[#E5E7EB] text-[#111111] hover:border-[#0B8F4D] hover:text-[#0B8F4D] rounded-full transition-colors cursor-pointer"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="w-4 h-4" />

@@ -24,13 +24,13 @@ export const PageHero: React.FC<PageHeroProps> = ({
         
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-xs font-semibold text-[#666666] mb-5">
-          <Link href="/" className="hover:text-[#E3261E] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#0B8F4D] transition-colors">Home</Link>
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={idx}>
               <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
               <Link
                 href={crumb.href}
-                className={idx === breadcrumbs.length - 1 ? 'text-[#E3261E] font-bold' : 'hover:text-[#E3261E] transition-colors'}
+                className={idx === breadcrumbs.length - 1 ? 'text-[#0B8F4D] font-bold' : 'hover:text-[#0B8F4D] transition-colors'}
               >
                 {crumb.name}
               </Link>
@@ -40,7 +40,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
 
         {/* Content */}
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#E3261E]/10 text-[#E3261E] border border-[#E3261E]/20 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20 mb-4">
             {badge}
           </span>
 

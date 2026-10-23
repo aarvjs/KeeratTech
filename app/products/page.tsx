@@ -54,7 +54,7 @@ function ProductCatalogContent() {
                 placeholder="Search anchors, epoxy, tools, or specs..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-2.5 bg-[#F8FAF8] border border-[#E5E7EB] rounded-xl text-sm text-[#111111] focus:outline-none focus:ring-2 focus:ring-[#E3261E] focus:border-transparent transition-all"
+                className="w-full pl-11 pr-4 py-2.5 bg-[#F8FAF8] border border-[#E5E7EB] rounded-xl text-sm text-[#111111] focus:outline-none focus:ring-2 focus:ring-[#0B8F4D] focus:border-transparent transition-all"
               />
               {searchQuery && (
                 <button
@@ -68,7 +68,7 @@ function ProductCatalogContent() {
 
             {/* Active Count & Info Badge */}
             <div className="flex items-center gap-3 text-xs text-[#666666] font-semibold w-full md:w-auto justify-between md:justify-end">
-              <span className="flex items-center gap-1.5 bg-[#E3261E]/10 text-[#E3261E] px-3.5 py-1.5 rounded-full border border-[#E3261E]/20">
+              <span className="flex items-center gap-1.5 bg-[#0B8F4D]/10 text-[#0B8F4D] px-3.5 py-1.5 rounded-full border border-[#0B8F4D]/20">
                 <ShieldCheck className="w-4 h-4" /> Showcase Only (No Price / Cart)
               </span>
               <span>Showing <strong>{filteredProducts.length}</strong> Products</span>
@@ -82,7 +82,7 @@ function ProductCatalogContent() {
               onClick={() => setSelectedCategory('all')}
               className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                 selectedCategory === 'all'
-                  ? 'bg-[#E3261E] text-white shadow-xs'
+                  ? 'bg-[#0B8F4D] text-white shadow-xs'
                   : 'bg-[#F8FAF8] text-[#111111] hover:bg-slate-200 border border-[#E5E7EB]'
               }`}
             >
@@ -95,7 +95,7 @@ function ProductCatalogContent() {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                   selectedCategory === cat.id
-                    ? 'bg-[#E3261E] text-white shadow-xs'
+                    ? 'bg-[#0B8F4D] text-white shadow-xs'
                     : 'bg-[#F8FAF8] text-[#111111] hover:bg-slate-200 border border-[#E5E7EB]'
                 }`}
               >
@@ -129,7 +129,7 @@ function ProductCatalogContent() {
                   setSelectedCategory('all');
                   setSearchQuery('');
                 }}
-                className="mt-6 bg-[#E3261E] text-white text-xs font-bold px-6 py-2.5 rounded-lg hover:bg-[#B81D17] transition-colors"
+                className="mt-6 bg-[#0B8F4D] text-white text-xs font-bold px-6 py-2.5 rounded-lg hover:bg-[#086938] transition-colors"
               >
                 Reset All Filters
               </button>
