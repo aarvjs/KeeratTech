@@ -30,7 +30,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) 
         </div>
         {product.isFeatured && (
           <div className="absolute top-3 right-3 bg-[#0B8F4D] text-white text-[11px] font-bold px-2.5 py-1 rounded-full shadow-xs">
-            ETA Option 1
+            Heavy Duty
           </div>
         )}
       </div>

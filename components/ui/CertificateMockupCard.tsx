@@ -32,7 +32,7 @@ export const CertificateMockupCard: React.FC<CertificateMockupProps> = ({
               KE
             </div>
             <span className="text-[11px] font-bold text-[#111111] uppercase tracking-wider">
-              ISO Audit
+              Quality Audit
             </span>
           </div>
 

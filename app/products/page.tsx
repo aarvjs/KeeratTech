@@ -37,7 +37,7 @@ function ProductCatalogContent() {
       <PageHero
         badge="Technical Catalog"
         title="Industrial Fasteners & Fixings Showcase"
-        subtitle="Explore high-load mechanical anchors, pure epoxy injection systems, power tools, and structural channel fixings. Certified under ETA Option 1."
+        subtitle="Explore high-load mechanical anchors, pure epoxy injection systems, power tools, and structural channel fixings. Engineered for heavy infrastructure."
         breadcrumbs={[{ name: 'Products Catalog', href: '/products' }]}
       />
 

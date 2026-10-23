@@ -8,7 +8,7 @@ export const WhyChooseUsSection: React.FC = () => {
   const steps = [
     {
       icon: <Award className="w-6 h-6 text-[#0B8F4D]" />,
-      title: 'ETA Option 1 Certified Quality',
+      title: 'Heavy-Duty Certified Quality',
       desc: 'All mechanical and chemical anchors undergo rigorous testing for cracked concrete, fire exposure (R120), and C1/C2 seismic load categories.',
       year: '01',
     },
@@ -32,8 +32,8 @@ export const WhyChooseUsSection: React.FC = () => {
     },
     {
       icon: <Clock className="w-6 h-6 text-[#0B8F4D]" />,
-      title: '40+ Years Industry Legacy',
-      desc: 'Established in 1984, our fixings have supported over 2,500 landmark infrastructure projects across Asia Pacific.',
+      title: '10+ Years Industry Experience',
+      desc: 'With 10+ years of proven industry experience, our fixings have supported over 2,500 landmark infrastructure projects across Asia Pacific.',
       year: '05',
     },
     {

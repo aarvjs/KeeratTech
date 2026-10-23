@@ -1,26 +1,78 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
-import { CheckCircle2, ArrowRight, Wrench } from 'lucide-react';
-import { SERVICES } from '@/constants/data';
+import { CheckCircle2, ArrowRight, Wrench, Layers } from 'lucide-react';
+import { DETAILED_SERVICES } from '@/constants/data';
 import { ServicesHero } from '@/components/sections/services/ServicesHero';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { InquiryModal } from '@/components/ui/InquiryModal';
 
+const SERVICE_CATEGORIES = [
+  { id: 'all', label: 'All Services' },
+  { id: 'anchoring', label: 'Anchoring & Fixing' },
+  { id: 'cutting', label: 'Sawing & Coring' },
+  { id: 'strengthening', label: 'Strengthening & Retrofitting' },
+  { id: 'grouting', label: 'Grouting & Waterproofing' },
+  { id: 'repair', label: 'Repair & Testing' },
+];
+
 export default function ServicesPage() {
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedService, setSelectedService] = useState<string | null>(null);
+
+  const displayedServices = useMemo(() => {
+    if (selectedCategory === 'all') return DETAILED_SERVICES;
+    return DETAILED_SERVICES.filter((srv) => srv.category === selectedCategory);
+  }, [selectedCategory]);
 
   return (
     <main className="w-full bg-white min-h-screen text-[#111111] pb-24 font-sans">
       {/* FULL-WIDTH HERO WITH BACKGROUND IMAGE EXTENDING BEHIND TRANSPARENT NAVBAR */}
       <ServicesHero />
 
+      {/* Category Filter Bar */}
+      <section className="bg-[#F8FAF8] border-b border-[#E5E7EB] py-6 sticky top-20 z-30 shadow-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div className="flex items-center gap-2 text-xs font-bold text-[#666666] uppercase tracking-wider">
+              <Layers className="w-4 h-4 text-[#0B8F4D]" />
+              <span>Service Disciplines ({displayedServices.length})</span>
+            </div>
+
+            {/* Filter Pills */}
+            <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none w-full sm:w-auto">
+              {SERVICE_CATEGORIES.map((cat) => {
+                const isActive = selectedCategory === cat.id;
+                const count =
+                  cat.id === 'all'
+                    ? DETAILED_SERVICES.length
+                    : DETAILED_SERVICES.filter((s) => s.category === cat.id).length;
+
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => setSelectedCategory(cat.id)}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
+                      isActive
+                        ? 'bg-[#0B8F4D] text-white shadow-xs'
+                        : 'bg-white text-[#111111] hover:bg-slate-200 border border-[#E5E7EB]'
+                    }`}
+                  >
+                    {cat.label} ({count})
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Alternating Detailed Service Cards */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-20">
-          {SERVICES.map((service, idx) => {
+          {displayedServices.map((service, idx) => {
             const isEven = idx % 2 === 0;
 
             return (
@@ -41,7 +93,7 @@ export default function ServicesPage() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4 bg-white/95 text-[#111111] text-xs font-bold px-3.5 py-1 rounded-full border border-[#E5E7EB] shadow-xs">
-                      Phase 0{idx + 1} Service
+                      Service {String(idx + 1).padStart(2, '0')}
                     </div>
                   </div>
                 </div>
@@ -105,7 +157,7 @@ export default function ServicesPage() {
           <SectionHeading
             badge="Quality Protocol"
             title="Our 4-Step Engineering Quality Assurance"
-            subtitle="Ensuring 100% compliance with EOTA guidelines, NABL test procedures, and jobsite safety norms."
+            subtitle="Ensuring 100% compliance with international engineering guidelines, calibrated test procedures, and jobsite safety norms."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
@@ -113,7 +165,7 @@ export default function ServicesPage() {
               { num: '01', title: 'Site Inspection & Scanning', desc: 'Ground penetrating radar (GPR) scan to locate existing rebar and conduit lines.' },
               { num: '02', title: 'Laser Alignment', desc: 'Precision digital layout setting to match structural drawing coordinates.' },
               { num: '03', title: 'Execution & Dosing', desc: 'Dust-free coring and calibrated torque or epoxy dosing.' },
-              { num: '04', title: 'Proof Pull Test & Certify', desc: 'Hydraulic tension load test with official NABL certified test report.' },
+              { num: '04', title: 'Proof Pull Test & Certify', desc: 'Hydraulic tension load test with official engineering test report.' },
             ].map((step, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl border border-[#E5E7EB] shadow-xs relative">
                 <span className="text-2xl font-black text-[#0B8F4D] block mb-2">{step.num}</span>

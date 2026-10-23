@@ -7,7 +7,6 @@ import { ServicesSection } from '@/components/sections/home/ServicesSection';
 import { IndustriesSection } from '@/components/sections/home/IndustriesSection';
 import { CinematicVideoSection } from '@/components/sections/home/CinematicVideoSection';
 import { WhyChooseUsSection } from '@/components/sections/home/WhyChooseUsSection';
-import { CertificatesSection } from '@/components/sections/home/CertificatesSection';
 import { ProjectGallerySection } from '@/components/sections/home/ProjectGallerySection';
 import { TestimonialsSection } from '@/components/sections/home/TestimonialsSection';
 import { FAQSection } from '@/components/sections/home/FAQSection';
@@ -16,7 +15,7 @@ import { CTABannerSection } from '@/components/sections/home/CTABannerSection';
 
 export const metadata = {
   title: 'Keerat Electech | High Performance Industrial Fasteners & Building Solutions',
-  description: 'Global manufacturer of ETA Option 1 wedge anchors, pure epoxy injection mortars, power tools, and concrete diamond coring services for major EPC infrastructure projects.',
+  description: 'Global manufacturer of heavy-duty wedge anchors, pure epoxy injection mortars, power tools, and concrete diamond coring services for major EPC infrastructure projects.',
 };
 
 export default function HomePage() {
@@ -46,10 +45,7 @@ export default function HomePage() {
       {/* SECTION 7: WHY CHOOSE US TIMELINE */}
       <WhyChooseUsSection />
 
-      {/* SECTION 8: CERTIFICATES */}
-      <CertificatesSection />
-
-      {/* SECTION 9: PROJECT GALLERY */}
+      {/* SECTION 8: PROJECT GALLERY */}
       <ProjectGallerySection />
 
       {/* SECTION 10: TESTIMONIALS */}

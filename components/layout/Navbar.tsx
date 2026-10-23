@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
               Call: <strong className={isTransparent ? 'text-white' : 'text-[#111111]'}>{COMPANY_INFO.phone}</strong>
             </a>
             <span>|</span>
-            <span>ISO 9001:2015 & ETA Option 1 Certified Manufacturer</span>
+            <span>High-Performance Structural Fasteners Manufacturer</span>
           </div>
 
           <div className="flex items-center gap-4 font-medium">
@@ -168,7 +168,7 @@ export const Navbar: React.FC = () => {
                           <h4 className="text-xs font-bold text-[#111111] uppercase tracking-wider">
                             Product Systems & Fasteners
                           </h4>
-                          <p className="text-xs text-[#666666]">ETA Certified heavy structural hardware</p>
+                          <p className="text-xs text-[#666666]">Heavy structural hardware systems</p>
                         </div>
                         <Link
                           href="/products"

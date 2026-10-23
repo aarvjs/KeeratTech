@@ -27,7 +27,7 @@ export const AboutPreviewSection: React.FC = () => {
               
               <div className="absolute bottom-6 left-6 right-6 text-white bg-white/95 backdrop-blur-md p-5 rounded-xl border border-[#E5E7EB] text-[#111111] shadow-md">
                 <span className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider">Engineering Compliance</span>
-                <h4 className="text-base font-bold text-[#111111] mt-0.5">ETA-Option 1 & ISO 9001 Approved</h4>
+                <h4 className="text-base font-bold text-[#111111] mt-0.5">Heavy Structural Engineering Approved</h4>
                 <p className="text-xs text-[#666666] mt-1">Certified for cracked concrete, R120 fire resistance, and C1/C2 seismic loading.</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export const AboutPreviewSection: React.FC = () => {
             <SectionHeading
               align="left"
               badge="About Keerat Electech"
-              title="Four Decades of Engineering Excellence in Structural Fixings"
+              title="10+ Years of Engineering Excellence in Structural Fixings"
               subtitle="We deliver high-load chemical injection mortars, heavy wedge anchors, power tools, and specialized diamond coring services for major EPC infrastructure projects."
             />
 
@@ -73,9 +73,9 @@ export const AboutPreviewSection: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-[#E5E7EB]">
               <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] text-center shadow-xs">
                 <div className="text-2xl font-black text-[#0B8F4D]">
-                  <AnimatedCounter end={40} suffix="+" />
+                  <AnimatedCounter end={10} suffix="+" />
                 </div>
-                <div className="text-[11px] font-bold text-[#666666] uppercase mt-0.5">Years</div>
+                <div className="text-[11px] font-bold text-[#666666] uppercase mt-0.5">Years Experience</div>
               </div>
 
               <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] text-center shadow-xs">

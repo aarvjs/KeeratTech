@@ -38,6 +38,7 @@ export interface ServiceItem {
   iconName: string;
   features: string[];
   processSteps: { title: string; desc: string }[];
+  category?: string;
 }
 
 export interface IndustryItem {

@@ -67,7 +67,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 className="object-cover transition-all duration-300"
               />
               <div className="absolute top-4 left-4 bg-[#0B8F4D] text-white text-xs font-bold px-3 py-1 rounded-full shadow-xs">
-                ETA Option 1 Rated
+                Heavy Duty Rated
               </div>
             </div>
 

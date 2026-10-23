@@ -5,20 +5,11 @@ import Image from 'next/image';
 import { Target, Compass, Award, ShieldCheck, CheckCircle2, HeartHandshake, Lightbulb } from 'lucide-react';
 import { AboutHeroCarousel } from '@/components/sections/about/AboutHeroCarousel';
 import { SectionHeading } from '@/components/ui/SectionHeading';
-import { CertificatesSection } from '@/components/sections/home/CertificatesSection';
 import { CTABannerSection } from '@/components/sections/home/CTABannerSection';
 import { TEAM_MEMBERS } from '@/constants/data';
 import { Button } from '@/components/ui/Button';
 
 export default function AboutPage() {
-  const milestones = [
-    { year: '1984', title: 'Company Founded', desc: 'Established machine workshop producing structural bolts & threaded rods.' },
-    { year: '1998', title: 'Chemical Epoxy R&D', desc: 'Pioneered pure epoxy formulation laboratory for post-installed rebar doweling.' },
-    { year: '2008', title: 'ETA Option 1 Certification', desc: 'Achieved first European Technical Assessment approval for cracked concrete wedge anchors.' },
-    { year: '2016', title: 'NABL Accredited Lab', desc: 'Built in-house structural testing laboratory with 500 kN hydraulic load cell rigs.' },
-    { year: '2024+', title: 'Pan-Asia Expansion', desc: 'Operating across 25+ cities delivering turnkey fixings for skyscrapers, metros, and airports.' },
-  ];
-
   const coreValues = [
     {
       title: 'Uncompromising Integrity',
@@ -51,12 +42,12 @@ export default function AboutPage() {
               <SectionHeading
                 align="left"
                 badge="Our Legacy"
-                title="Four Decades of Engineering Excellence in Structural Fixings"
-                subtitle="Founded in 1984, Keerat Electech grew from a specialized fastener forging facility into an international powerhouse for complete structural fixing solutions."
+                title="10+ Years of Engineering Excellence in Structural Fixings"
+                subtitle="Founded with over 10+ years of dedicated engineering experience, Keerat Electech grew from a specialized fastener facility into an international powerhouse for complete structural fixing solutions."
               />
 
               <p className="text-[#666666] text-sm leading-relaxed font-normal">
-                Modern mega-structures demand fixings that resist unpredictable wind shear, seismic shocks, and severe corrosion. Our engineering philosophy centers on absolute load-bearing reliability—tested down to the micro-millimeter under EOTA and ISO directives.
+                Modern mega-structures demand fixings that resist unpredictable wind shear, seismic shocks, and severe corrosion. Our engineering philosophy centers on absolute load-bearing reliability—tested down to the micro-millimeter under international structural directives.
               </p>
 
               <p className="text-[#666666] text-sm leading-relaxed font-normal">
@@ -69,7 +60,7 @@ export default function AboutPage() {
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-[#111111]">ETA Option 1</h4>
+                    <h4 className="text-xs font-bold text-[#111111]">Heavy Duty Anchor</h4>
                     <p className="text-[11px] text-[#666666]">Cracked Concrete Rated</p>
                   </div>
                 </div>
@@ -79,8 +70,8 @@ export default function AboutPage() {
                     <Award className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-[#111111]">ISO 9001:2015</h4>
-                    <p className="text-[11px] text-[#666666]">TÜV Certified Quality</p>
+                    <h4 className="text-xs font-bold text-[#111111]">Tested Standard</h4>
+                    <p className="text-[11px] text-[#666666]">Certified Quality</p>
                   </div>
                 </div>
               </div>
@@ -141,7 +132,7 @@ export default function AboutPage() {
           <SectionHeading
             badge="Company Philosophy"
             title="Core Values Driving Keerat Electech"
-            subtitle="The fundamental pillars behind our 40 years of continuous growth."
+            subtitle="The fundamental pillars behind our 10+ years of continuous growth."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
@@ -158,34 +149,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="py-20 bg-[#F8FAF8] border-b border-[#E5E7EB]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <SectionHeading
-            badge="Historical Growth"
-            title="Milestones of Innovation & Achievement"
-            subtitle="How we evolved over 40 years of continuous growth."
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-5 mt-10">
-            {milestones.map((item, idx) => (
-              <div key={idx} className="bg-white p-5 rounded-xl border border-[#E5E7EB] shadow-xs hover:border-[#0B8F4D] transition-all">
-                <div className="text-2xl font-black text-[#0B8F4D] mb-1">{item.year}</div>
-                <h4 className="text-sm font-bold text-[#111111] mb-1.5">{item.title}</h4>
-                <p className="text-xs text-[#666666] leading-relaxed font-normal">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Executive Leadership */}
       <section className="py-20 bg-white border-b border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeading
             badge="Executive Leadership"
             title="Guided by Senior Structural Engineers & Industry Veterans"
-            subtitle="Decades of combined experience in mechanical engineering, metallurgy, and heavy construction."
+            subtitle="10+ years of combined experience in mechanical engineering, metallurgy, and heavy construction."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 max-w-4xl mx-auto">
@@ -214,9 +184,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* ISO Certificates */}
-      <CertificatesSection />
 
       {/* CTA Banner */}
       <CTABannerSection />

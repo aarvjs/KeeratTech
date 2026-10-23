@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Keerat Electech | Premium Industrial Fasteners & Building Solutions',
-  description: 'Leading manufacturer and supplier of ETA Option 1 mechanical wedge anchors, chemical injection mortars, power tools, and concrete diamond drilling solutions.',
+  description: 'Leading manufacturer and supplier of heavy-duty mechanical wedge anchors, chemical injection mortars, power tools, and concrete diamond drilling solutions.',
   icons: {
     icon: '/assets/logo-official.svg',
   },

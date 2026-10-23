@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               Subscribe to Fastener Technical Bulletins & Catalog Updates
             </h3>
             <p className="text-sm text-[#666666] mt-1 font-normal">
-              Receive quarterly anchor calculation guidelines, ETA approval updates & engineering papers.
+              Receive quarterly anchor calculation guidelines, technical specification updates & engineering papers.
             </p>
           </div>
 

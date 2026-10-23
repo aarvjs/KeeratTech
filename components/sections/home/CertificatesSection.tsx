@@ -7,20 +7,20 @@ import { CertificateMockupCard } from '@/components/ui/CertificateMockupCard';
 export const CertificatesSection: React.FC = () => {
   const certificates = [
     {
-      title: 'ISO 9001:2015 Quality Management',
-      subtitle: 'TÜV Rheinland International Quality Standard Certification',
-      code: 'ISO-9001-QUAL-2024',
+      title: 'Structural Quality Management',
+      subtitle: 'TÜV Rheinland International Standard Certification',
+      code: 'QMS-QUAL-2024',
       issuedTo: 'Keerat Electech Solutions Pvt. Ltd.',
-      sealText: 'ISO 9001',
+      sealText: 'VERIFIED',
       date: 'Valid Thru 2028',
     },
     {
-      title: 'ETA Option 1 Cracked Concrete',
-      subtitle: 'European Organisation for Technical Assessment Approval',
-      code: 'ETA-19/0421-CRACKED',
+      title: 'Heavy Cracked Concrete Approval',
+      subtitle: 'European Organisation Technical Assessment Standards',
+      code: 'CERT-19/0421-CRACKED',
       issuedTo: 'Keerat Wedge & Pure Epoxy Systems',
-      sealText: 'ETA OPT 1',
-      date: 'EOTA Certified',
+      sealText: 'CONCRETE',
+      date: 'Approved',
     },
     {
       title: 'Authorized Global OEM Distributor',
@@ -44,9 +44,9 @@ export const CertificatesSection: React.FC = () => {
     <section className="py-20 bg-white text-[#111111] border-t border-[#E5E7EB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionHeading
-          badge="Verified ISO Compliance"
+          badge="Verified Quality Compliance"
           title="Certified & Approved for Structural Engineering"
-          subtitle="Four decades of rigorous international testing under European, ISO, and NABL accredited structural standards."
+          subtitle="Over 10+ years of rigorous international testing under European and NABL accredited structural standards."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">

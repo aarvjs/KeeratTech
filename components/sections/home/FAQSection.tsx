@@ -18,7 +18,7 @@ export const FAQSection: React.FC = () => {
         <SectionHeading
           badge="Frequently Asked Questions"
           title="Technical Engineering & Ordering Guidance"
-          subtitle="Answers to common queries regarding ETA approvals, site load testing, BIM families, and ordering terms."
+          subtitle="Answers to common queries regarding technical specifications, site load testing, BIM families, and ordering terms."
         />
 
         <div className="space-y-3 mt-10">
