@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: 'Keerat Electech | Premium Industrial Fasteners & Building Solutions',
   description: 'Leading manufacturer and supplier of heavy-duty mechanical wedge anchors, chemical injection mortars, power tools, and concrete diamond drilling solutions.',
   icons: {
-    icon: '/assets/logo-official.svg',
+    icon: '/assets/keerat-logo-icon.png',
   },
   keywords: [
     'Keerat Electech',

@@ -76,9 +76,9 @@ export const Footer: React.FC = () => {
           {/* Column 1: Company Profile */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative w-44 h-10">
+              <div className="relative w-48 h-12">
                 <Image
-                  src="/assets/logo.svg"
+                  src="/assets/keerat-logo-horizontal.png"
                   alt="Keerat Electech Logo"
                   fill
                   className="object-contain object-left"

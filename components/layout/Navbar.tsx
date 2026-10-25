@@ -120,14 +120,18 @@ export const Navbar: React.FC = () => {
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
-        {/* LOGO - OFFICIAL KEERAT ELECTECH SVG */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-44 sm:w-52 h-11">
+        {/* LOGO - KEERAT ELECTECH */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className={`relative w-48 sm:w-56 h-12 sm:h-14 transition-all duration-200 ${
+            isTransparent
+              ? 'bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md border border-white/40'
+              : ''
+          }`}>
             <Image
-              src="/assets/logo-official.svg"
+              src="/assets/keerat-logo-horizontal.png"
               alt="Keerat Electech Logo"
               fill
-              className="object-contain object-left"
+              className={`object-contain ${isTransparent ? 'object-center p-0.5' : 'object-left'} group-hover:scale-[1.02] transition-transform duration-200`}
               priority
             />
           </div>
@@ -275,9 +279,9 @@ export const Navbar: React.FC = () => {
               <div>
                 {/* Glass Drawer Header with Logo & Close button */}
                 <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E5E7EB]">
-                  <div className="relative w-40 h-10">
+                  <div className="relative w-44 h-11">
                     <Image
-                      src="/assets/logo-official.svg"
+                      src="/assets/keerat-logo-horizontal.png"
                       alt="Keerat Electech Logo"
                       fill
                       className="object-contain object-left"

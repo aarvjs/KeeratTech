@@ -10,7 +10,6 @@ import {
   CheckCircle,
   ShieldCheck,
   Building2,
-  Headphones,
 } from 'lucide-react';
 import { COMPANY_INFO, PRODUCT_CATEGORIES } from '@/constants/data';
 import { PageHero } from '@/components/layout/PageHero';
@@ -228,19 +227,21 @@ export default function ContactPage() {
             )}
           </div>
 
-          {/* Map Card & Regional Hubs */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white text-[#111111] rounded-2xl p-6 border border-[#E5E7EB] shadow-xs space-y-4">
-              <div className="flex items-center justify-between">
+          {/* Map Card */}
+          <div className="lg:col-span-5 h-full">
+            <div className="bg-white text-[#111111] rounded-2xl p-6 sm:p-8 border border-[#E5E7EB] shadow-xs flex flex-col h-full space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-[#E5E7EB]">
                 <div>
-                  <span className="text-xs font-bold text-[#0B8F4D] uppercase">Headquarters Location</span>
-                  <h3 className="text-base font-bold text-[#111111]">Panki B Block, Kanpur</h3>
+                  <span className="text-xs font-bold text-[#0B8F4D] uppercase tracking-wider">Headquarters Location</span>
+                  <h3 className="text-lg font-bold text-[#111111]">Panki B Block, Kanpur</h3>
                 </div>
-                <Building2 className="w-5 h-5 text-[#0B8F4D]" />
+                <div className="w-10 h-10 rounded-xl bg-[#0B8F4D]/10 flex items-center justify-center text-[#0B8F4D] shrink-0">
+                  <Building2 className="w-5 h-5" />
+                </div>
               </div>
 
-              {/* Map iFrame */}
-              <div className="relative w-full h-60 rounded-xl overflow-hidden border border-[#E5E7EB] bg-[#F8FAF8]">
+              {/* Map iFrame - Expanded Height to cover full column area */}
+              <div className="relative w-full flex-1 min-h-[460px] rounded-xl overflow-hidden border border-[#E5E7EB] bg-[#F8FAF8] shadow-inner">
                 <iframe
                   title="Keerat Electech Headquarters Location Map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14285.342129528738!2d80.2285!3d26.4712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c470a1a3617e9%3A0x8dd0b10ec689b252!2sPanki%2C%20Kanpur%2C%20Uttar%20Pradesh%20208020!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
@@ -250,34 +251,21 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full min-h-[460px]"
                 ></iframe>
               </div>
 
-              <div className="text-xs text-[#666666] space-y-1">
-                <p>📍 {COMPANY_INFO.address}</p>
-                <p>⚡ Express Logistics Hub for Pan-India & Export Orders</p>
-              </div>
-            </div>
-
-            {/* Regional Hubs */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-xs space-y-3">
-              <h4 className="text-xs font-bold text-[#111111] uppercase tracking-wider flex items-center gap-2">
-                <Headphones className="w-4 h-4 text-[#0B8F4D]" /> Regional Distribution Depots
-              </h4>
-
-              <div className="space-y-2 text-xs text-[#666666]">
-                <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
-                  <strong className="text-[#111111] block">Mumbai Testing Center & Logistics</strong>
-                  <span>MIDC Industrial Area, Navi Mumbai • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
-                </div>
-                <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5E7EB]">
-                  <strong className="text-[#111111] block">Delhi NCR Regional Hub</strong>
-                  <span>Ecotech III, Greater Noida, UP • <a href="tel:+917235055577" className="hover:text-[#0B8F4D] transition-colors">{COMPANY_INFO.phone}</a></span>
-                </div>
+              <div className="text-xs text-[#666666] pt-2 space-y-1.5 border-t border-[#E5E7EB]">
+                <p className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 text-[#0B8F4D] shrink-0 mt-0.5" />
+                  <span><strong>Plant Address:</strong> {COMPANY_INFO.address}</span>
+                </p>
+                <p className="flex items-center gap-2 text-[#0B8F4D] font-semibold pl-6">
+                  ⚡ Express Logistics Hub for Pan-India & Export Orders
+                </p>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* FAQs Section */}
