@@ -25,18 +25,22 @@ export const ProductCategoriesSection: React.FC = () => {
               className="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-[#0B8F4D] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
             >
               {/* Image Header */}
-              <div className="relative h-48 w-full overflow-hidden bg-slate-200">
+              <div className="relative h-48 w-full overflow-hidden bg-white p-2 border-b border-slate-100 flex items-center justify-center">
                 <Image
                   src={category.image}
                   alt={category.name}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-contain p-3 group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
-                <span className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-extrabold px-3 py-1 rounded-full border border-slate-200">
+                <span className="absolute bottom-3 left-3 bg-[#0B8F4D]/10 backdrop-blur-sm text-[#0B8F4D] text-xs font-extrabold px-3 py-1 rounded-full border border-[#0B8F4D]/20">
                   {category.itemCount}+ SKUs
                 </span>
+                {(category.id === 'fischer' || category.id === 'hilti') && (
+                  <span className="absolute top-3 right-3 bg-[#0B8F4D] text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-xs">
+                    Brand Series
+                  </span>
+                )}
               </div>
 
               {/* Body */}

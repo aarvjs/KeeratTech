@@ -109,7 +109,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold text-[#111111] mb-2">Our Corporate Vision</h3>
               <p className="text-[#666666] text-sm leading-relaxed font-normal">
-                To be the undisputed Asia-Pacific reference brand in structural fasteners, chemical anchoring, and concrete drilling solutions—setting global benchmarks for safety margin performance, zero-defect manufacturing, and sustainable engineering.
+                To be the undisputed Pan-India reference brand in structural fasteners, chemical anchoring, and concrete drilling solutions—setting national benchmarks for safety margin performance, zero-defect manufacturing, and sustainable engineering.
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function AboutPage() {
             subtitle="10+ years of combined experience in mechanical engineering, metallurgy, and heavy construction."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 mt-10 max-w-md mx-auto">
             {TEAM_MEMBERS.map((member) => (
               <div key={member.id} className="bg-[#F8FAF8] rounded-2xl border border-[#E5E7EB] overflow-hidden group shadow-xs hover:shadow-lg transition-all flex flex-col">
                 <div className="relative h-64 w-full bg-slate-100">

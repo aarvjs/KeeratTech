@@ -164,45 +164,65 @@ export const Navbar: React.FC = () => {
                     <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                   </Link>
 
-                  {/* Mega Menu Dropdown */}
+                  {/* Mega Menu Dropdown with hover bridge */}
                   {megaMenuOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 w-[680px] bg-white rounded-2xl shadow-xl border border-[#E5E7EB] p-6 text-[#111111] animate-fade-in z-50">
-                      <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#E5E7EB]">
-                        <div>
-                          <h4 className="text-xs font-bold text-[#111111] uppercase tracking-wider">
-                            Product Systems & Fasteners
-                          </h4>
-                          <p className="text-xs text-[#666666]">Heavy structural hardware systems</p>
-                        </div>
-                        <Link
-                          href="/products"
-                          className="text-xs font-bold text-[#0B8F4D] hover:underline flex items-center gap-1"
-                        >
-                          All Products <ArrowRight className="w-3.5 h-3.5" />
-                        </Link>
-                      </div>
-
-                      {/* INDIVIDUAL HOVER ANIMATION FOR EACH ITEM INDEPENDENTLY */}
-                      <div className="grid grid-cols-2 gap-3">
-                        {PRODUCT_CATEGORIES.map((cat) => (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                      <div className="w-[720px] bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] p-6 text-[#111111] animate-fade-in">
+                        <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#E5E7EB]">
+                          <div>
+                            <h4 className="text-xs font-bold text-[#111111] uppercase tracking-wider">
+                              Product Systems & Fasteners
+                            </h4>
+                            <p className="text-xs text-[#666666]">Authorized Systems: Fischer, Hilti & Keerat Heavy Fixings</p>
+                          </div>
                           <Link
-                            key={cat.id}
-                            href={`/products?category=${cat.id}`}
-                            className="flex items-start gap-3 p-3 rounded-xl bg-white hover:bg-[#F8FAF8] border border-transparent hover:border-[#0B8F4D] transition-all duration-200 text-left shadow-2xs hover:shadow-xs group/cat"
+                            href="/products"
+                            onClick={() => setMegaMenuOpen(false)}
+                            className="text-xs font-bold text-[#0B8F4D] hover:underline flex items-center gap-1"
                           >
-                            <div className="p-2 bg-[#0B8F4D]/10 rounded-lg text-[#0B8F4D] shrink-0 group-hover/cat:bg-[#0B8F4D] group-hover/cat:text-white transition-colors duration-200">
-                              {getCategoryIcon(cat.iconName)}
-                            </div>
-                            <div>
-                              <div className="text-sm font-bold text-[#111111] group-hover/cat:text-[#0B8F4D] transition-colors duration-200">
-                                {cat.name}
-                              </div>
-                              <p className="text-xs text-[#666666] line-clamp-1 mt-0.5 font-normal">
-                                {cat.description}
-                              </p>
-                            </div>
+                            All Products <ArrowRight className="w-3.5 h-3.5" />
                           </Link>
-                        ))}
+                        </div>
+
+                        {/* INDIVIDUAL HOVER ANIMATION FOR EACH ITEM INDEPENDENTLY */}
+                        <div className="grid grid-cols-2 gap-3 max-h-[520px] overflow-y-auto pr-1">
+                          {PRODUCT_CATEGORIES.map((cat) => {
+                            const isTopBrand = cat.id === 'fischer' || cat.id === 'hilti';
+                            return (
+                              <Link
+                                key={cat.id}
+                                href={`/products?category=${cat.id}`}
+                                onClick={() => setMegaMenuOpen(false)}
+                                className={`flex items-start gap-3 p-3 rounded-xl transition-all duration-200 text-left group/cat ${
+                                  isTopBrand
+                                    ? 'bg-gradient-to-br from-[#0B8F4D]/5 to-white hover:from-[#0B8F4D]/10 hover:to-[#F8FAF8] border border-[#0B8F4D]/30 hover:border-[#0B8F4D] shadow-xs'
+                                    : 'bg-white hover:bg-[#F8FAF8] border border-transparent hover:border-[#0B8F4D] shadow-2xs hover:shadow-xs'
+                                }`}
+                              >
+                                <div className={`p-2 rounded-lg shrink-0 transition-colors duration-200 ${
+                                  isTopBrand
+                                    ? 'bg-[#0B8F4D] text-white group-hover/cat:bg-[#087238]'
+                                    : 'bg-[#0B8F4D]/10 text-[#0B8F4D] group-hover/cat:bg-[#0B8F4D] group-hover/cat:text-white'
+                                }`}>
+                                  {getCategoryIcon(cat.iconName)}
+                                </div>
+                                <div className="min-w-0 flex-1">
+                                  <div className="text-sm font-bold text-[#111111] group-hover/cat:text-[#0B8F4D] transition-colors duration-200 flex items-center justify-between gap-1">
+                                    <span className="truncate">{cat.name}</span>
+                                    {isTopBrand && (
+                                      <span className="text-[9px] font-black uppercase tracking-wider bg-[#0B8F4D] text-white px-1.5 py-0.5 rounded-full shrink-0">
+                                        Brand
+                                      </span>
+                                    )}
+                                  </div>
+                                  <p className="text-xs text-[#666666] line-clamp-1 mt-0.5 font-normal">
+                                    {cat.description}
+                                  </p>
+                                </div>
+                              </Link>
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
                   )}
@@ -301,19 +321,42 @@ export const Navbar: React.FC = () => {
                     const isActive = pathname === link.href;
 
                     return (
-                      <Link
-                        key={link.name}
-                        href={link.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold text-base transition-colors ${
-                          isActive
-                            ? 'bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20'
-                            : 'text-[#111111] hover:bg-[#F8FAF8]'
-                        }`}
-                      >
-                        <span>{link.name}</span>
-                        {isActive && <span className="w-2 h-2 rounded-full bg-[#0B8F4D]" />}
-                      </Link>
+                      <div key={link.name} className="space-y-1.5">
+                        <Link
+                          href={link.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold text-base transition-colors ${
+                            isActive
+                              ? 'bg-[#0B8F4D]/10 text-[#0B8F4D] border border-[#0B8F4D]/20'
+                              : 'text-[#111111] hover:bg-[#F8FAF8]'
+                          }`}
+                        >
+                          <span>{link.name}</span>
+                          {isActive && <span className="w-2 h-2 rounded-full bg-[#0B8F4D]" />}
+                        </Link>
+
+                        {/* Direct Brand Links for Mobile */}
+                        {link.hasMegaMenu && (
+                          <div className="pl-3 pr-1 grid grid-cols-2 gap-2 pt-0.5 pb-1">
+                            <Link
+                              href="/products?category=fischer"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="text-xs font-bold px-3 py-2 rounded-lg bg-emerald-50 text-[#0B8F4D] border border-emerald-200/70 hover:bg-emerald-100 flex items-center justify-between shadow-2xs"
+                            >
+                              <span>Fischer</span>
+                              <span className="text-[9px] font-black uppercase bg-[#0B8F4D] text-white px-1.5 py-0.5 rounded-full">Brand</span>
+                            </Link>
+                            <Link
+                              href="/products?category=hilti"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="text-xs font-bold px-3 py-2 rounded-lg bg-emerald-50 text-[#0B8F4D] border border-emerald-200/70 hover:bg-emerald-100 flex items-center justify-between shadow-2xs"
+                            >
+                              <span>Hilti</span>
+                              <span className="text-[9px] font-black uppercase bg-[#0B8F4D] text-white px-1.5 py-0.5 rounded-full">Brand</span>
+                            </Link>
+                          </div>
+                        )}
+                      </div>
                     );
                   })}
                 </div>

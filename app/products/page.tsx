@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useMemo, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React, { useState, useMemo, useEffect, Suspense } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { Search, ShieldCheck, RefreshCw } from 'lucide-react';
 import { PRODUCTS, PRODUCT_CATEGORIES } from '@/constants/data';
 import { Product } from '@/types';
@@ -10,12 +10,27 @@ import { ProductCard } from '@/components/ui/ProductCard';
 import { InquiryModal } from '@/components/ui/InquiryModal';
 
 function ProductCatalogContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
-  const initialCategory = searchParams.get('category') || 'all';
+  const categoryParam = searchParams.get('category') || 'all';
 
-  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+  const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [inquiryProduct, setInquiryProduct] = useState<Product | null>(null);
+
+  // Sync category state whenever the URL search parameter changes (e.g. from navbar dropdown or back/forward)
+  useEffect(() => {
+    setSelectedCategory(categoryParam);
+  }, [categoryParam]);
+
+  const handleSelectCategory = (catId: string) => {
+    setSelectedCategory(catId);
+    if (catId === 'all') {
+      router.push('/products', { scroll: false });
+    } else {
+      router.push(`/products?category=${catId}`, { scroll: false });
+    }
+  };
 
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((product) => {
@@ -79,7 +94,7 @@ function ProductCatalogContent() {
           {/* Category Filter Pills */}
           <div className="pt-3 border-t border-[#E5E7EB] flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             <button
-              onClick={() => setSelectedCategory('all')}
+              onClick={() => handleSelectCategory('all')}
               className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                 selectedCategory === 'all'
                   ? 'bg-[#0B8F4D] text-white shadow-xs'
@@ -92,7 +107,7 @@ function ProductCatalogContent() {
             {PRODUCT_CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
+                onClick={() => handleSelectCategory(cat.id)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                   selectedCategory === cat.id
                     ? 'bg-[#0B8F4D] text-white shadow-xs'

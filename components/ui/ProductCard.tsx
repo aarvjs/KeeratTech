@@ -17,13 +17,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInquire }) 
     <div className="group bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#0B8F4D] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
       
       {/* Image Container */}
-      <div className="relative h-60 w-full overflow-hidden bg-[#F8FAF8]">
+      <div className="relative h-60 w-full overflow-hidden bg-white p-3 border-b border-[#E5E7EB] flex items-center justify-center">
         <Image
           src={product.image}
           alt={product.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3 bg-white/95 text-[#111111] text-[11px] font-bold px-3 py-1 rounded-full border border-[#E5E7EB] shadow-xs">
           {product.category}

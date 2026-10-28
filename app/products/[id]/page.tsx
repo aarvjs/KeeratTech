@@ -58,13 +58,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           
           {/* Gallery */}
           <div className="lg:col-span-6 space-y-4">
-            <div className="relative h-[380px] sm:h-[480px] w-full rounded-2xl overflow-hidden border border-[#E5E7EB] bg-[#F8FAF8] shadow-xs">
+            <div className="relative h-[380px] sm:h-[480px] w-full rounded-2xl overflow-hidden border border-[#E5E7EB] bg-white p-6 shadow-xs flex items-center justify-center">
               <Image
                 src={activeImage || product.image}
                 alt={product.name}
                 fill
                 priority
-                className="object-cover transition-all duration-300"
+                className="object-contain p-4 transition-all duration-300"
               />
               <div className="absolute top-4 left-4 bg-[#0B8F4D] text-white text-xs font-bold px-3 py-1 rounded-full shadow-xs">
                 Heavy Duty Rated
@@ -78,13 +78,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                   <button
                     key={idx}
                     onClick={() => setActiveImage(img)}
-                    className={`relative w-20 h-16 rounded-xl overflow-hidden border-2 shrink-0 transition-all cursor-pointer ${
+                    className={`relative w-20 h-16 rounded-xl overflow-hidden border-2 shrink-0 transition-all cursor-pointer bg-white p-1 ${
                       (activeImage || product.image) === img
                         ? 'border-[#0B8F4D] scale-105'
                         : 'border-[#E5E7EB] opacity-70 hover:opacity-100'
                     }`}
                   >
-                    <Image src={img} alt={`Thumb ${idx}`} fill className="object-cover" />
+                    <Image src={img} alt={`Thumb ${idx}`} fill className="object-contain p-1" />
                   </button>
                 ))}
               </div>
@@ -150,14 +150,21 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                   fullWidth
                   icon={<Send className="w-4 h-4" />}
                 >
-                  Request Technical Quote
+                  Request Technical RFQ
                 </Button>
 
                 <a
-                  href="/contact"
-                  className="bg-[#F8FAF8] hover:bg-slate-200 text-[#111111] border border-[#E5E7EB] font-bold text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-colors text-center"
+                  href={`https://wa.me/917235055577?text=${encodeURIComponent(
+                    `*Product Inquiry - Keerat Electech*\n\nHello, I would like to inquire about *${product.name}* (${product.tagline}). Please share pricing and technical specifications.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-colors text-center shadow-xs"
                 >
-                  <FileText className="w-4 h-4 text-[#0B8F4D]" /> Technical Datasheet
+                  <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.825zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.309A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.63 0-3.149-.508-4.408-1.378l-.316-.218-2.955.775.789-2.88-.237-.344C3.947 14.805 3.4 13.456 3.4 12c0-4.742 3.858-8.6 8.6-8.6s8.6 3.858 8.6 8.6-3.858 8.6-8.6 8.6z"/>
+                  </svg>
+                  Instant WhatsApp Inquiry
                 </a>
               </div>
             </div>
