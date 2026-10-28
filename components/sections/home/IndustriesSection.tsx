@@ -8,33 +8,33 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 export const IndustriesSection: React.FC = () => {
   const industries = [
     {
-      title: 'Commercial Buildings',
-      image: '/assets/images/skyscraper.png',
-      heightClass: 'h-80 lg:h-[380px]', // Tall masonry height
+      title: 'Commercial Skyscrapers',
+      image: '/assets/images/india_construction_highrise.png',
+      heightClass: 'h-80 lg:h-[380px]',
     },
     {
-      title: 'Airports & Terminals',
-      image: '/assets/images/core_cutting.png',
+      title: 'Airports and Terminals',
+      image: '/assets/images/india_airport_terminal.png',
       heightClass: 'h-64 lg:h-[280px]',
     },
     {
-      title: 'Metro Projects',
-      image: '/assets/images/hero_fasteners.png',
+      title: 'Metro Rail Networks',
+      image: '/assets/images/kanpur_metro.png',
       heightClass: 'h-72 lg:h-[340px]',
     },
     {
-      title: 'Warehouses & Logistics',
-      image: '/assets/images/chemical_epoxy.png',
+      title: 'Warehouses and Logistics Hubs',
+      image: '/assets/images/india_industrial_plant.png',
       heightClass: 'h-64 lg:h-[290px]',
     },
     {
-      title: 'Factories & Industrial Plants',
-      image: '/assets/images/power_drill.png',
+      title: 'Automotive and Heavy Industry',
+      image: '/assets/images/eicher_motors_factory.png',
       heightClass: 'h-80 lg:h-[360px]',
     },
     {
-      title: 'Residential Towers',
-      image: '/assets/images/engineer_worker.png',
+      title: 'Infrastructure and EPC Projects',
+      image: '/assets/images/india_metro_construction.png',
       heightClass: 'h-72 lg:h-[310px]',
     },
   ];
@@ -43,12 +43,11 @@ export const IndustriesSection: React.FC = () => {
     <section className="py-20 bg-white text-[#111111] border-t border-[#E5E7EB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionHeading
-          badge="Sectors & Applications"
-          title="Industries We Serve Across Asia Pacific"
-          subtitle="Engineered fastening systems trusted in critical commercial skyscrapers, rapid transit metro networks, airports, and heavy industrial plants."
+          badge="Sectors and Applications"
+          title="Industries We Serve Across Pan India"
+          subtitle="Engineered fastening systems trusted in critical commercial skyscrapers, rapid transit metro networks, airports, and heavy industrial plants - serving clients Pan India."
         />
 
-        {/* Pinterest-Style Masonry Grid: 3 Cols Desktop, 2 Cols Tablet, 1 Col Mobile */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6 mt-10">
           {industries.map((ind, idx) => (
             <motion.div
@@ -67,11 +66,7 @@ export const IndustriesSection: React.FC = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                
-                {/* Small Dark Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent group-hover:from-black/90 transition-opacity duration-300" />
-
-                {/* Industry Name Overlay at Bottom */}
                 <div className="absolute bottom-5 left-5 right-5 z-10">
                   <span className="w-6 h-0.5 bg-[#0B8F4D] block mb-2 group-hover:w-10 transition-all duration-300" />
                   <h3 className="text-lg font-extrabold text-white leading-snug">

@@ -38,7 +38,7 @@ export const AboutPreviewSection: React.FC = () => {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-[#666666]">NABL Accredited</div>
+                <div className="text-[10px] font-bold uppercase tracking-wider text-[#666666]">In-House Testing</div>
                 <div className="text-xs font-extrabold text-[#111111]">In-House Test Laboratory</div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export const AboutPreviewSection: React.FC = () => {
               {[
                 'Full compliance with EOTA EAD 330232 & 330087 structural codes',
                 'In-house engineering team supporting 3D BIM & Revit design',
-                'NABL certified hydraulic proof pull testing up to 500 kN on site',
+                'Calibrated hydraulic proof pull testing up to 500 kN on site',
                 '24-hour turnaround for emergency site deliveries across 25+ cities',
               ].map((point, idx) => (
                 <div key={idx} className="flex items-start gap-3">

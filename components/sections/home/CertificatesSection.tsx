@@ -32,11 +32,11 @@ export const CertificatesSection: React.FC = () => {
     },
     {
       title: 'Safety & Seismic R120 Excellence',
-      subtitle: 'NABL Accredited Structural & Fire Resistance Compliance',
-      code: 'NABL-LAB-SEISMIC-C2',
+      subtitle: 'Accredited Structural & Fire Resistance Compliance',
+      code: 'BIS-LAB-SEISMIC-C2',
       issuedTo: 'Keerat Electech Quality Lab',
       sealText: 'R120 SAFE',
-      date: 'NABL Accredited',
+      date: 'BIS Accredited',
     },
   ];
 
@@ -46,7 +46,7 @@ export const CertificatesSection: React.FC = () => {
         <SectionHeading
           badge="Verified Quality Compliance"
           title="Certified & Approved for Structural Engineering"
-          subtitle="Over 10+ years of rigorous international testing under European and NABL accredited structural standards."
+          subtitle="Over 10+ years of rigorous international testing under European accredited structural and fire resistance standards."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">

@@ -20,8 +20,8 @@ export const WhyChooseUsSection: React.FC = () => {
     },
     {
       icon: <Shield className="w-6 h-6 text-[#0B8F4D]" />,
-      title: 'NABL Accredited On-Site Pull Testing',
-      desc: 'Mobile proof testing crews deliver third-party certified load test reports up to 500 kN directly on your active jobsite.',
+      title: 'Certified On-Site Pull Testing',
+      desc: 'Mobile proof testing crews deliver third-party certified load test reports up to 500 kN using calibrated hydraulic load cells, directly on your active jobsite.',
       year: '03',
     },
     {
@@ -33,7 +33,7 @@ export const WhyChooseUsSection: React.FC = () => {
     {
       icon: <Clock className="w-6 h-6 text-[#0B8F4D]" />,
       title: '10+ Years Industry Experience',
-      desc: 'With 10+ years of proven industry experience, our fixings have supported over 2,500 landmark infrastructure projects across Asia Pacific.',
+      desc: 'With 10+ years of proven industry experience, our fixings have supported over 2,500 landmark infrastructure projects Pan India.',
       year: '05',
     },
     {

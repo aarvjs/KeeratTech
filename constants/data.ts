@@ -1308,7 +1308,7 @@ export const SERVICES: ServiceItem[] = [
     image: '/assets/images/hero_fasteners.png',
     iconName: 'ShieldCheck',
     features: [
-      'NABL calibrated digital load cell testing up to 500 kN',
+      'Calibrated digital load cell testing up to 500 kN',
       'Destructive and non-destructive proof load testing',
       'Third-party certified engineering test reports',
       'Compliant with EOTA / ACI 355 guidelines',
@@ -1724,8 +1724,8 @@ export const DETAILED_SERVICES: ServiceItem[] = [
     id: 'anchor-testing',
     title: 'On-Site Anchor Pull-Out Testing & QA',
     category: 'repair',
-    shortDesc: 'NABL calibrated hydraulic proof tension testing up to 500 kN with official certification.',
-    fullDesc: 'Certified on-site anchor pull-out load testing and quality assurance using NABL-calibrated hydraulic load cell rigs up to 500 kN, delivering official signed engineering inspection test reports for structural engineering audits.',
+    shortDesc: 'Calibrated hydraulic proof tension testing up to 500 kN with official certification.',
+    fullDesc: 'Certified on-site anchor pull-out load testing and quality assurance using calibrated hydraulic load cell rigs up to 500 kN, delivering official signed engineering inspection test reports for structural engineering audits.',
     image: '/assets/images/hero_fasteners.png',
     iconName: 'ShieldCheck',
     features: [
@@ -1800,8 +1800,8 @@ export const CERTIFICATES: CertificateItem[] = [
     badge: 'EU Standard',
   },
   {
-    id: 'nabl-accredited',
-    title: 'NABL Accredited Test Laboratory',
+    id: 'accredited-test-lab',
+    title: 'Accredited Test Laboratory',
     issuer: 'National Accreditation Board for Testing Labs',
     year: 'In-House Testing Facility',
     image: '/assets/images/core_cutting.png',
@@ -1869,7 +1869,7 @@ export const FAQS: FAQItem[] = [
   {
     id: 'faq-2',
     question: 'Do you provide on-site anchor pull-out testing services?',
-    answer: 'Absolutely. We deploy mobile technical teams equipped with NABL-calibrated hydraulic load cell testers up to 500 kN, delivering official engineering test certificates.',
+    answer: 'Absolutely. We deploy mobile technical teams equipped with calibrated hydraulic load cell testers up to 500 kN, delivering official engineering test certificates.',
   },
   {
     id: 'faq-3',
